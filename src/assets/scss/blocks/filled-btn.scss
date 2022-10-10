@@ -11,8 +11,8 @@
 
   padding: 1.4rem 3.2rem;
 
-  background-color: $accent;
-  border: 1px solid $accent;
+  background-color: $primary;
+  border: 1px solid $primary;
   border-radius: 7.2rem;
 
   transition: all 0.2s ease;
@@ -26,11 +26,11 @@
   }
 
   &:hover {
-    color: $accent;
+    color: $primary;
     background-color: transparent;
 
     svg {
-      fill: $accent;
+      fill: $primary;
       margin-left: 2rem;
     }
   }

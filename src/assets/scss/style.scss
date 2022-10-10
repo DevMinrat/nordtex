@@ -5,7 +5,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: calc(100vw / 1600 * 10);
+  font-size: calc(100vw / 1400 * 10);
 
   // @include breakpoint($xl-bp) {
   //   font-size: calc(100vw / 1600 * 10);
@@ -28,11 +28,11 @@ html {
 }
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: Circe, sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.38;
-  color: $primary;
+  line-height: 1.2;
+  color: $black;
 
   background-color: white;
 
