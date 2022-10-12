@@ -1,28 +1,30 @@
-.section-title {
-  font-family: "Pribambas";
-  font-weight: 400;
-  font-size: 6.2rem;
-  line-height: 1.23;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: $primary;
-
-  @include breakpoint($sm-bp) {
-    font-size: 4rem;
-  }
+.section {
+  padding: 10rem 0;
 }
-.section-heading {
-  font-family: "Pribambas";
-  font-weight: 400;
-  font-size: 4.8rem;
-  line-height: 1.08;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: $primary;
 
-  @include breakpoint($sm-bp) {
-    font-size: 3.6rem;
-    line-height: 1.11;
+.section-title {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $black;
+
+  margin-bottom: 3rem;
+  padding-left: 8rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    width: 6rem;
+    height: 0.4rem;
+
+    background: $black;
   }
 }

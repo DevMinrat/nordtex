@@ -1,25 +1,16 @@
-if (document.querySelector(".weworks")) {
-  var weworksSlider = new Splide(".weworks", {
-    arrows: false,
+if (document.querySelector(".main-news__slider")) {
+  var weworksSlider = new Splide(".main-news__slider", {
     width: "100%",
-    perPage: 2,
-    gap: "1rem",
+    perPage: 3,
+    perMove: 1,
+    gap: "4rem",
+    padding: { left: "11rem" },
 
     drag: "free",
     snap: true,
     flickPower: 200,
 
     mediaQuery: "min",
-    breakpoints: {
-      921: {
-        destroy: true,
-      },
-      501: {
-        perPage: 2,
-      },
-      10: {
-        perPage: 1,
-      },
-    },
+    breakpoints: {},
   }).mount();
 }
