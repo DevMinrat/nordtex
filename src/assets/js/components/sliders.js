@@ -13,9 +13,9 @@ if (document.querySelector(".main-news__slider")) {
       next  : 'splide__arrow--next your-class-next',
     },
 
-    drag: "free",
-    snap: true,
-    flickPower: 200,
+    // drag: "free",
+    // snap: true,
+    // flickPower: 200,
 
     mediaQuery: "min",
     breakpoints: {},
