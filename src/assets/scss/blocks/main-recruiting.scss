@@ -1,0 +1,32 @@
+.main-recruiting {
+  background: url(../images/rectuiting/recruiting-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.main-recruiting__inner {
+  display: flex;
+  align-items: center;
+}
+
+.main-recruiting__img {
+  width: 100%;
+  max-width: 50rem;
+
+  margin-right: 6rem;
+}
+
+.main-recruiting__content {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.main-recruiting__descr {
+  color: rgba(51, 59, 72, 0.8);
+  margin-bottom: 3rem;
+}
+
+.main-recruiting__links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
