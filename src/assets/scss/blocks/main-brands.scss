@@ -1,0 +1,45 @@
+.main-brands {
+  color: white;
+
+  padding: 13.7rem 0;
+
+  background: url(../images/brands/main-brands-bg.jpg) no-repeat;
+  background-size: cover;
+
+  .section-title {
+    color: white;
+
+    &::before {
+      background: white;
+    }
+  }
+}
+
+.main-brands__inner {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-brands__content {
+  width: 100%;
+  max-width: 40rem;
+
+  margin-right: 10rem;
+}
+
+.main-brands__descr {
+  margin-bottom: 4rem;
+}
+
+.main-brands__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  img:nth-child(n + 4) {
+    border-top: 0.1rem solid rgb(255, 255, 255, 0.3);
+  }
+  :nth-child(3n + 2),
+  :nth-child(3n + 1) {
+    border-right: 0.1rem solid rgb(255, 255, 255, 0.3);
+  }
+}

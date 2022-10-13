@@ -1,6 +1,5 @@
 .hollow-btn {
-  width: 100%;
-  max-width: 19.6rem;
+  width: max-content;
   height: 4.8rem;
 
   display: flex;
@@ -17,44 +16,75 @@
 
   transition: all 0.2s ease;
 
-  svg {
-    stroke: $primary;
-  }
-
-  .arrow-sm {
-    width: 2.4rem;
-    height: 2.4rem;
-
-    margin-left: 1.2rem;
-    stroke: $primary;
-  }
-  .arrow-long {
-    display: none;
-
-    width: 3.6rem;
-    height: 2.4rem;
-
-    margin-left: 1.2rem;
-    stroke: $primary;
-  }
-
   &:hover {
-    max-width: 20.8rem;
-
     color: white;
 
     background-color: $accent;
     border-color: $accent;
 
-    svg {
-      stroke: white;
-    }
+    .arrow-icon {
+      width: 3.4rem;
 
-    .arrow-sm {
-      display: none;
+      span {
+        width: 3.4rem;
+
+        background: #fff;
+      }
     }
-    .arrow-long {
-      display: block;
+  }
+}
+
+.arrow-icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  margin-left: 1.2rem;
+  margin-bottom: 0.3rem;
+
+  transition: inherit;
+
+  & span {
+    display: block;
+
+    position: relative;
+
+    width: 1.2rem;
+    height: 2px;
+
+    background: $primary;
+
+    transition: width 0.1s linear;
+  }
+  & span::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background: inherit;
+
+    transform: rotate(45deg);
+  }
+  & span::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background: inherit;
+
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    span {
+      width: 3.4rem;
     }
   }
 }

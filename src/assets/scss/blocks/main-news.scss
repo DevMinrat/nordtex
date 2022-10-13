@@ -84,6 +84,14 @@
   margin-bottom: 4rem;
 }
 
+.main-news__slider {
+  margin-bottom: 4rem;
+
+  .splide__track {
+    overflow: visible;
+  }
+}
+
 .mn-si {
   width: 100%;
   max-width: 36rem;
@@ -126,8 +134,12 @@
     background-color: transparent;
     border-color: none;
 
-    svg {
-      stroke: $primary;
+    .arrow-icon span {
+      background-color: $primary;
     }
   }
+}
+
+.main-news__slider-link {
+  margin-left: auto;
 }

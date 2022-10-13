@@ -83,21 +83,5 @@ document.addEventListener("DOMContentLoaded", () => {
     //     hideAllDropList();
     //   }
     // }
-
-    //// animate arrow link
-
-    const arrowLink = document.querySelector("#arrow-sm");
-
-    console.log(arrowLink.viewBox.animVal.width);
-    arrowLink.viewBox.animVal.width = 36;
-    console.log(arrowLink.viewBox.animVal.width);
-
-    console.log(arrowLink.querySelector("path").viewBox);
-
-    arrowLink.querySelector(
-      "path"
-    ).outerHTML = `<path d="M33.6963 11.9997H0.303432M33.6963 11.9997L28.3391 6.64258M33.6963 11.9997L28.3391 17.3569"
-    stroke-width="1.4" />`;
-    console.log(arrowLink.querySelector("path"));
   }
 });

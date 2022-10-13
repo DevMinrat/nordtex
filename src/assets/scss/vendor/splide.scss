@@ -147,3 +147,38 @@
   position: relative;
   z-index: 0;
 }
+
+.splide__arrows {
+  position: absolute;
+  top: -6.5rem;
+  right: 12rem;
+  z-index: 1;
+}
+
+.splide__arrow {
+  background: transparent;
+  border: none;
+
+  &:hover {
+    svg {
+      stroke: $primary;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  svg {
+    width: 3.4rem;
+    height: 2.4rem;
+
+    stroke: $accent;
+  }
+}
+
+.splide__arrow--next {
+  svg {
+    transform: rotate(180deg);
+  }
+}
