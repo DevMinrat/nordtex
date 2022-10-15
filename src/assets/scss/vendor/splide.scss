@@ -46,7 +46,7 @@
   padding: 0 !important;
 }
 .splide.is-initialized:not(.is-active) .splide__list {
-  display: block;
+  display: flex;
 }
 .splide__pagination {
   -ms-flex-align: center;

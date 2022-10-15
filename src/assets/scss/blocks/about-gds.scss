@@ -1,0 +1,57 @@
+.about-gds__header {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+
+  margin-bottom: 5rem;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+}
+
+.about-gds__slider.is-initialized:not(.is-active) .splide__list {
+  gap: 4rem;
+}
+
+.about-gds__item {
+  width: 100%;
+  max-width: 36rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &:last-of-type {
+    margin-right: 0 !important;
+  }
+}
+
+.about-gds__item-img {
+  width: 100%;
+
+  margin-bottom: 3rem;
+}
+
+.about-gds__item-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: $black;
+
+  margin-bottom: 2.2rem;
+}
+
+.about-gds__item-descr {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  color: $black;
+  opacity: 0.8;
+
+  margin-bottom: 4rem;
+}
+
+.about-gds__item-link {
+  margin-top: auto;
+}

@@ -2,21 +2,39 @@
   overflow: hidden;
 }
 
+.page-intro {
+}
+
+.page-title__wrapper {
+  padding-top: 25rem;
+
+  .bracket {
+    display: block;
+    text-align: center;
+
+    line-height: 2.6rem;
+  }
+}
+
 .page-title {
-  font-family: "Pribambas";
   font-style: normal;
   font-weight: 400;
-  font-size: 6.2rem;
-  line-height: 1.23;
-  letter-spacing: 0.02em;
+  font-size: 4.5rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+
+  margin-bottom: 4.5rem;
+  margin-top: 2rem;
+}
+
+.bracket {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 8rem;
   text-transform: uppercase;
   color: $primary;
 
-  margin-bottom: 3.2rem;
-
-  @include breakpoint($sm-bp) {
-    font-size: 4.8rem;
-
-    margin-bottom: 2.4rem;
-  }
+  user-select: none;
 }

@@ -3,3 +3,47 @@
 
   background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
 }
+
+.intro__wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
+}
+
+.video__start-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+
+  transform: translate(-50%, -50%);
+  transition: all 0.1s linear;
+  cursor: pointer;
+  opacity: 0.8;
+
+  width: 10rem;
+  height: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(244, 244, 244, 0.2);
+  border-radius: 50%;
+  border: 0.1rem solid #ffffff;
+
+  &:hover {
+    background: transparent;
+  }
+
+  svg {
+    width: 1.8rem;
+    height: 2.4rem;
+
+    fill: white;
+    margin-left: 0.9rem;
+  }
+}
