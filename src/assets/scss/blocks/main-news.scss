@@ -41,6 +41,10 @@
 .mn-item__content {
   width: 100%;
   max-width: 55rem;
+
+  .cite-heading {
+    margin-bottom: 3rem;
+  }
 }
 
 .mn-item__date {
@@ -49,23 +53,24 @@
   text-transform: uppercase;
   color: $black;
   opacity: 0.8;
+
+  margin-bottom: 4rem;
 }
 
-.mn-item__header {
+.cite-heading {
   display: flex;
-  align-items: center;
 
   span {
     font-family: "Poppins";
     font-weight: 600;
     font-size: 15rem;
-    line-height: 17.5rem;
+    line-height: 0.5;
     text-transform: uppercase;
     color: #c1a478;
 
     margin-right: 0.9rem;
   }
-  .mn-item__title {
+  .cite-heading__title {
     font-weight: 800;
     font-size: 3rem;
     line-height: 130%;

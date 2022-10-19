@@ -2,3 +2,272 @@
   background: url(../images/about/about-intro-bg.jpg) no-repeat;
   background-size: cover;
 }
+
+.about-benefits {
+  padding: 13rem 0 10rem;
+
+  background: url(../images/about/about-benefits-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.about-nordtex__title {
+  position: relative;
+
+  width: 100%;
+  max-width: 65rem;
+
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 125%;
+  color: $black;
+
+  margin: 0 auto 11rem;
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    width: 44rem;
+    height: 12.5rem;
+
+    background: url(../images/logo.svg) no-repeat;
+    background-size: cover;
+
+    opacity: 0.07;
+    filter: brightness(0);
+  }
+}
+.about-benefits__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+.about-benefits__info {
+  width: 100%;
+  max-width: 46rem;
+
+  margin-right: 4rem;
+}
+.about-benefits__video-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 46rem;
+  height: 33.8rem;
+
+  background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
+}
+.video__start-btn {
+  width: 9rem;
+  height: 9rem;
+}
+
+.about-history {
+  position: relative;
+
+  background: url(../images/about/about-history-bg.jpg) no-repeat;
+  background-size: contain;
+  background-position: center right;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 78rem;
+    height: 23.6rem;
+
+    background: url(../images/about/about-history-date.svg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-history__inner {
+  display: flex;
+  align-items: center;
+}
+
+.about-history__images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+
+  margin-right: 10rem;
+}
+
+.about-history__big-img {
+  width: 100%;
+  max-width: 56rem;
+}
+.about-history__sm-img {
+  width: 100%;
+  max-width: 40rem;
+}
+.about-history__content {
+  width: 100%;
+  max-width: 40rem;
+}
+.about-history__title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 1rem;
+}
+.about-history__descr {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 125%;
+  color: #ffffff;
+  opacity: 0.8;
+
+  margin-bottom: 4rem;
+}
+
+.about-team {
+  padding: 10rem 0 5rem;
+}
+
+.about-team__img {
+  width: 100%;
+
+  margin-bottom: 5rem;
+}
+
+.about-team__title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: $black;
+
+  margin-bottom: 1rem;
+}
+
+.about-team__descr {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 125%;
+  color: #333b48;
+  opacity: 0.8;
+
+  margin-bottom: 4rem;
+}
+
+.about-prod {
+  background: url(../images/about/about-prod-bg.png) no-repeat;
+  background-size: contain;
+}
+
+.about-prod__inner {
+  display: flex;
+}
+
+.about-prod__content {
+  padding: 19.7rem 0;
+  margin-top: 10rem;
+}
+
+.section-title {
+  margin-bottom: 4rem;
+}
+
+.about-prod__images {
+  position: relative;
+  right: -14rem;
+
+  width: 58rem;
+  height: 62.8rem;
+}
+
+.about-prod__big-img {
+  width: 100%;
+  max-width: 58rem;
+
+  position: absolute;
+  top: 0;
+}
+
+.about-prod__sm-img {
+  width: 100%;
+  max-width: 40rem;
+
+  position: absolute;
+  left: 6rem;
+  bottom: 0;
+  z-index: 1;
+}
+
+.about-gds__header {
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+
+  margin-bottom: 5rem;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+}
+
+.about-gds__slider.is-initialized:not(.is-active) .splide__list {
+  gap: 4rem;
+}
+
+.about-gds__item {
+  width: 100%;
+  max-width: 36rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &:last-of-type {
+    margin-right: 0 !important;
+  }
+}
+
+.about-gds__item-img {
+  width: 100%;
+
+  margin-bottom: 3rem;
+}
+
+.about-gds__item-title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: $black;
+
+  margin-bottom: 2.2rem;
+}
+
+.about-gds__item-descr {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  color: $black;
+  opacity: 0.8;
+
+  margin-bottom: 4rem;
+}
+
+.about-gds__item-link {
+  margin-top: auto;
+}
