@@ -1,0 +1,106 @@
+.manufacture-benefits {
+  padding-top: 14rem;
+
+  background: url(../images/manufacture/mfr-bnf-bg.png) no-repeat;
+  background-size: cover;
+
+  .about-nordtex__title {
+    margin-bottom: 14rem;
+  }
+
+  .splide__track {
+    overflow: visible;
+  }
+}
+
+.mfr-bnf__slide {
+  width: 100%;
+
+  max-width: 20.7rem;
+
+  padding: 2rem 1.6rem 1.6rem;
+
+  background: #fff;
+  border-top: 0.4rem solid $secondary;
+  box-shadow: 0px 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+}
+
+.mfr-bnf__slide-img {
+  width: 100%;
+
+  margin-bottom: 1.4rem;
+}
+
+.mfr-bnf__slide-descr {
+  text-align: center;
+
+  opacity: 0.8;
+
+  span {
+    color: $secondary;
+  }
+}
+
+.mfr-factories__item {
+  display: flex;
+  align-items: stretch;
+
+  padding: 7.3rem 0 9.5rem;
+  margin-left: 12rem;
+
+  background-repeat: no-repeat;
+  background-size: 87.6rem;
+  background-position: right;
+
+  & + & {
+    margin-top: 5rem;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    margin-left: 0;
+    margin-right: 12rem;
+
+    background-position: left;
+
+    .mfr-factories__item-img {
+      margin-right: 0;
+      margin-left: 10rem;
+    }
+  }
+}
+
+.mfr-factories__item-img {
+  width: 56rem;
+  height: 36rem;
+
+  align-self: flex-start;
+
+  object-fit: cover;
+
+  margin-right: 10rem;
+}
+.mfr-factories__item-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 40.5rem;
+}
+.mfr-factories__item-name {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.mfr-factories__item-subname {
+  font-size: 2rem;
+
+  margin-bottom: 3rem;
+}
+.mfr-factories__item-descr {
+  margin-bottom: 4rem;
+}
+
+.mfr-factories__item-link {
+  margin-top: auto;
+}

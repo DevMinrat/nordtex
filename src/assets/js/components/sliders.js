@@ -24,7 +24,7 @@ if (document.querySelector(".main-news__slider")) {
 }
 
 if (document.querySelector(".about-gds__slider")) {
-  var weworksSlider = new Splide(".about-gds__slider", {
+  var aboutGdsSlider = new Splide(".about-gds__slider", {
     width: "100%",
     // perPage: 3,
     autoWidth: true,
@@ -44,4 +44,51 @@ if (document.querySelector(".about-gds__slider")) {
       },
     },
   }).mount();
+}
+
+if (document.querySelector(".mfr-bnf__slider")) {
+  var mfrBnfSlider = new Splide(".mfr-bnf__slider", {
+    width: "100%",
+    autoWidth: true,
+    perMove: 1,
+    gap: "3.1rem",
+    pagination: false,
+    arrows: false,
+
+    // drag: "free",
+    // snap: true,
+    // flickPower: 200,
+
+    mediaQuery: "min",
+    breakpoints: {
+      921: {
+        drag: false,
+      },
+    },
+  }).mount();
+}
+
+if (document.querySelector(".factory-info__main-slider")) {
+  var factoryMainSlider = new Splide(".factory-info__main-slider", {
+    width: "100%",
+    autoWidth: true,
+    gap: "10rem",
+    rewind: true,
+    pagination: false,
+    arrows: false,
+    focus: "center",
+  });
+
+  var factoryThumbSlider = new Splide(".factory-info__thumb-slider", {
+    width: "100%",
+    autoWidth: true,
+    gap: "2rem",
+    rewind: true,
+    pagination: false,
+    isNavigation: true,
+  });
+
+  factoryMainSlider.sync(factoryThumbSlider);
+  factoryMainSlider.mount();
+  factoryThumbSlider.mount();
 }

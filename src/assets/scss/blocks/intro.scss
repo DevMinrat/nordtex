@@ -4,6 +4,11 @@
   background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
 }
 
+.intro-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .intro__wrapper {
   position: relative;
 
