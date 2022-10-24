@@ -60,6 +60,8 @@
 
   transition: all 0.2s linear;
 
+  margin-right: 10rem;
+
   &.is-active {
     opacity: 1;
 
@@ -84,10 +86,110 @@
   width: 10rem;
   height: 10rem;
 
+  &.is-active {
+    border: 0.4rem solid $secondary;
+  }
+
   img {
     width: 100%;
     height: 100%;
 
     object-fit: cover;
+  }
+}
+
+.factory-benefits {
+  margin-bottom: 10rem;
+}
+.fct-bnf {
+  display: flex;
+}
+.fct-bnf__info {
+  width: 100%;
+  max-width: 62rem;
+
+  padding: 10rem 4rem 0 12rem;
+
+  background: url(../images/manufacture/factory/fact-ben-bg.png) no-repeat;
+  background-size: 62rem;
+  background-position: top left;
+}
+.fct-bnf__info-title {
+  width: 100%;
+  max-width: 42rem;
+
+  font-weight: 700;
+  font-size: 2rem;
+
+  margin-bottom: 5.2rem;
+}
+.fct-bnf__info-descr {
+  width: 100%;
+  max-width: 46rem;
+
+  opacity: 0.8;
+
+  margin-bottom: 7rem;
+}
+.fct-bnf__list {
+  width: 100%;
+  max-width: 78rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 5rem 12rem 5rem 10rem;
+
+  background: url(../images/about/about-history-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.fct-bnf__list-title {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  margin-bottom: 4rem;
+}
+.fct-bnf__list-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fct-bnf__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+
+  padding: 2.7rem 0;
+
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+
+  &:nth-child(odd) {
+    padding-right: 2rem;
+  }
+  &:nth-child(even) {
+    padding-left: 2rem;
+
+    border-left: 0.1rem solid rgba(255, 255, 255, 0.2);
+  }
+  &:nth-child(5) {
+    grid-column: 1/3;
+  }
+}
+.fct-bnf__item-num {
+  font-weight: 700;
+  font-size: 4.6rem;
+  line-height: 80%;
+  color: #ffffff;
+  opacity: 0.2;
+}
+.fct-bnf__item-descr {
+  color: white;
+
+  span {
+    font-weight: 700;
+    color: $primary;
   }
 }

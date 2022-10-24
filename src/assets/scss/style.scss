@@ -70,6 +70,10 @@ svg {
   transition: all 0.1s linear;
 }
 
+.pt-10 {
+  padding-top: 10rem;
+}
+
 /* Vendors */
 
 @import "vendor/splide.scss";
@@ -93,6 +97,9 @@ svg {
 @import "blocks/team.scss";
 @import "blocks/manufacture.scss";
 @import "blocks/factory.scss";
+@import "blocks/products.scss";
+@import "blocks/brands.scss";
+@import "blocks/career.scss";
 
 @import "blocks/footer";
 

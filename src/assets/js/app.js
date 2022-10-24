@@ -84,4 +84,19 @@ document.addEventListener("DOMContentLoaded", () => {
     //   }
     // }
   }
+
+  const brandsSection = document.querySelector(".brands");
+  const showBrandsBtn = document.querySelector(".show-brands");
+
+  if (brandsSection && showBrandsBtn) {
+    showBrandsBtn.addEventListener("click", () => {
+      if (brandsSection.classList.contains("hide")) {
+        brandsSection.classList.remove("hide");
+        showBrandsBtn.querySelector("span").innerText = "Скрыть бренды";
+      } else {
+        brandsSection.classList.add("hide");
+        showBrandsBtn.querySelector("span").innerText = "Показать бренды";
+      }
+    });
+  }
 });

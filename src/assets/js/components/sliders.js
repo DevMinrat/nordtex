@@ -70,10 +70,11 @@ if (document.querySelector(".mfr-bnf__slider")) {
 
 if (document.querySelector(".factory-info__main-slider")) {
   var factoryMainSlider = new Splide(".factory-info__main-slider", {
+    type: "loop",
     width: "100%",
-    autoWidth: true,
-    gap: "10rem",
-    rewind: true,
+    perPage: 1,
+    // gap: "10rem",
+    // rewind: true,
     pagination: false,
     arrows: false,
     focus: "center",
@@ -86,6 +87,13 @@ if (document.querySelector(".factory-info__main-slider")) {
     rewind: true,
     pagination: false,
     isNavigation: true,
+
+    classes: {
+      arrows: "splide__arrows your-class-arrows",
+      arrow: "splide__arrow your-class-arrow",
+      prev: "splide__arrow--prev your-class-prev",
+      next: "splide__arrow--next your-class-next",
+    },
   });
 
   factoryMainSlider.sync(factoryThumbSlider);
