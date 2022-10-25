@@ -1,0 +1,104 @@
+.pci {
+  .intro__wrapper {
+    padding-top: 17.5rem;
+  }
+}
+
+.pci__inner {
+  display: flex;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.pci-news__img {
+  align-self: flex-start;
+
+  width: 100%;
+  max-width: 56rem;
+}
+
+.pci-news__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .pci-news__link {
+    border: none;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.pci-news__date {
+  color: white;
+  opacity: 0.8;
+}
+.pci-news__title {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.pci-news__descr {
+  color: white;
+  opacity: 0.8;
+}
+
+.prc__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.prc-search {
+  position: relative;
+  max-width: 36rem;
+  height: 4.6rem;
+
+  margin: 0 auto;
+}
+
+.prc-search__input {
+  width: 100%;
+  max-width: 36rem;
+  height: 4.6rem;
+
+  padding: 1.2rem 5rem 1.2rem 1.6rem;
+
+  border: 0.1rem solid rgba(51, 59, 72, 0.3);
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: rgba(51, 59, 72, 0.3);
+  }
+}
+
+.prc-search__btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    svg {
+      fill: #333b48;
+    }
+  }
+
+  svg {
+    width: 2.6rem;
+    height: 2.6rem;
+
+    fill: rgba(51, 59, 72, 0.3);
+  }
+}

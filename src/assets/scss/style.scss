@@ -66,6 +66,13 @@ a {
   }
 }
 
+input,
+textarea {
+  &::placeholder {
+    font-family: "Circe";
+  }
+}
+
 svg {
   transition: all 0.1s linear;
 }
@@ -87,6 +94,7 @@ svg {
 @import "blocks/filled-btn.scss";
 @import "blocks/header";
 @import "blocks/modal.scss";
+@import "blocks/pagination.scss";
 
 @import "blocks/intro.scss";
 @import "blocks/main-news.scss";
@@ -100,6 +108,7 @@ svg {
 @import "blocks/products.scss";
 @import "blocks/brands.scss";
 @import "blocks/career.scss";
+@import "blocks/press-center.scss";
 
 @import "blocks/footer";
 
