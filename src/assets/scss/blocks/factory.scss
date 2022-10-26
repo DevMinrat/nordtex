@@ -1,34 +1,3 @@
-.factory__back-link {
-  display: flex;
-  align-items: center;
-
-  color: $primary;
-
-  margin: 10rem 0;
-
-  transition: all 0.1s liner;
-
-  &:hover {
-    color: $accent;
-
-    .arrow-icon {
-      width: 3.4rem;
-
-      span {
-        width: 3.4rem;
-
-        background: #fff;
-      }
-    }
-  }
-
-  .arrow-icon {
-    margin-right: 1.2rem;
-
-    transform: rotate(180deg);
-  }
-}
-
 .factory-info {
   .section-title {
     margin-bottom: 3rem;

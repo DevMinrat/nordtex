@@ -2,9 +2,6 @@
   overflow: hidden;
 }
 
-.page-intro {
-}
-
 .page-title__wrapper {
   padding-top: 25rem;
 
@@ -37,4 +34,39 @@
   color: $primary;
 
   user-select: none;
+}
+
+.page__back-link {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+
+  color: $primary;
+  text-transform: uppercase;
+
+  margin: 10rem 0;
+
+  transition: all 0.1s liner;
+
+  &:hover {
+    color: $accent;
+
+    .arrow-icon {
+      width: 3.4rem;
+
+      span {
+        width: 3.4rem;
+
+        background: $accent;
+      }
+    }
+  }
+
+  .arrow-icon {
+    margin-left: 0;
+    margin-right: 1.2rem;
+
+    transform: rotate(180deg);
+  }
 }
