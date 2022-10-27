@@ -66,19 +66,27 @@ a {
   }
 }
 
-input,
-textarea {
-  &::placeholder {
-    font-family: "Circe";
-  }
-}
-
 svg {
   transition: all 0.1s linear;
 }
 
 .pt-10 {
   padding-top: 10rem;
+}
+
+.tabs-pane {
+  display: none;
+
+  &.tabs-pane_show {
+    display: block;
+  }
+}
+.tabs-pane_addl {
+  display: none;
+
+  &.tabs-pane_addl_show {
+    display: block;
+  }
 }
 
 /* Vendors */
@@ -95,6 +103,7 @@ svg {
 @import "blocks/header";
 @import "blocks/modal.scss";
 @import "blocks/pagination.scss";
+@import "blocks/form.scss";
 
 @import "blocks/intro.scss";
 @import "blocks/main-news.scss";
@@ -110,6 +119,7 @@ svg {
 @import "blocks/career.scss";
 @import "blocks/press-center.scss";
 @import "blocks/news.scss";
+@import "blocks/contacts.scss";
 
 @import "blocks/footer";
 
