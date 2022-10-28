@@ -71,3 +71,41 @@ input {
 
   margin-bottom: 3rem;
 }
+
+select {
+  height: 4.8rem;
+
+  border: 0.1rem solid $primary;
+  border-radius: 0;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $primary;
+
+  padding: 1.2rem 3rem;
+
+  outline: none;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_108672_4171' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='10'%3E%3Crect width='20' height='10' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_108672_4171)'%3E%3Cpath d='M0.570312 0H19.4265L9.9984 9.42809L0.570312 0Z' fill='%23C1A478'/%3E%3C/g%3E%3C/svg%3E%0A"),
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 3rem top 50%, 0 0;
+  background-size: 2rem 1rem, 100%;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
