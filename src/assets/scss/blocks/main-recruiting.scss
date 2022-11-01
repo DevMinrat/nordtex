@@ -1,11 +1,37 @@
 .main-recruiting {
+  position: relative;
+
   background: url(../images/rectuiting/recruiting-bg.png) no-repeat;
   background-size: cover;
+
+  .section-title {
+    @include breakpoint($sm-bp) {
+      display: none;
+    }
+  }
+
+  .section-title--mob {
+    display: none;
+
+    @include breakpoint($sm-bp) {
+      display: block;
+    }
+  }
 }
 
 .main-recruiting__inner {
   display: flex;
   align-items: center;
+
+  @include breakpoint($lg-bp) {
+    align-items: stretch;
+  }
+
+  @include breakpoint($sm-bp) {
+    align-items: unset;
+
+    flex-direction: column;
+  }
 }
 
 .main-recruiting__img {
@@ -13,6 +39,21 @@
   max-width: 50rem;
 
   margin-right: 6rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 33.2rem;
+
+    margin-right: 3rem;
+
+    object-fit: cover;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: 34.5rem;
+    height: auto;
+
+    margin-bottom: 4rem;
+  }
 }
 
 .main-recruiting__content {
@@ -23,10 +64,56 @@
 .main-recruiting__descr {
   color: rgba(51, 59, 72, 0.8);
   margin-bottom: 3rem;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: 4rem;
+  }
 }
 
 .main-recruiting__links {
   display: flex;
   align-items: center;
   gap: 3rem;
+
+  @include breakpoint($lg-bp) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.main-recruiting__links-item {
+  @include breakpoint($lg-bp) {
+    width: 100%;
+    max-width: 23.5rem;
+    justify-content: center;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: 100%;
+  }
+}
+
+.main-recruiting__bg-word {
+  position: absolute;
+  right: -16rem;
+  top: 11rem;
+
+  font-weight: 800;
+  font-size: 24.5rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $black;
+  opacity: 0.05;
+
+  user-select: none;
+
+  @include breakpoint($lg-bp) {
+    top: 4.9rem;
+    right: 3rem;
+
+    font-size: 12rem;
+  }
+  @include breakpoint($sm-bp) {
+    display: none;
+  }
 }

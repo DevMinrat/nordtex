@@ -31,58 +31,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const burger = document.querySelector(".burger-menu");
+    const mobMenuClose = document.querySelector(".mob-menu_close");
     const menu = document.querySelector(".menu");
-    const dropLinks = document.querySelectorAll(
-      ".nav-list__item-link--droplink"
-    );
-    const dropList = document.querySelectorAll(".nav-list__droplink-list");
 
     burger.addEventListener("click", () => {
-      burger.classList.toggle("menu-on");
-      menu.classList.toggle("active");
+      menu.classList.add("active");
 
-      if (burger.classList.contains("menu-on")) {
-        scrollLock.disablePageScroll();
-      } else {
-        scrollLock.enablePageScroll();
-      }
+      scrollLock.disablePageScroll();
     });
 
-    // if (window.innerWidth <= 991) {
-    //   for (let i = 0; i < dropLinks.length; i++) {
-    //     dropLinks[i].addEventListener("click", function (e) {
-    //       toggleDroplinksStyle(i);
-    //       showDroplistContent(e, i);
-    //     });
-    //   }
-    // }
+    mobMenuClose.addEventListener("click", () => {
+      menu.classList.remove("active");
 
-    // function toggleDroplinksStyle(i) {
-    //   dropLinks.forEach((el, inx, arr) => {
-    //     if (el === arr[i]) {
-    //       el.classList.add("active");
-    //     } else {
-    //       el.classList.remove("active");
-    //     }
-    //   });
-    // }
+      scrollLock.enablePageScroll();
+    });
 
-    // function hideAllDropList() {
-    //   dropList.forEach((item) => {
-    //     item.style.maxHeight = null;
-    //   });
-    // }
+    const headerLogo = document.querySelector(".header__logo");
+    const headerSearchBtn = document.querySelector(".header-search__icon");
+    const headerOther = document.querySelector(".header-orher");
 
-    // function showDroplistContent(event, i) {
-    //   if (!dropList[i].style.maxHeight) {
-    //     event.preventDefault();
-    //     hideAllDropList();
-    //     dropList[i].style.maxHeight = dropList[i].scrollHeight + "px";
-    //   } else {
-    //     event.stopPropagation();
-    //     hideAllDropList();
-    //   }
-    // }
+    headerSearchBtn.addEventListener("click", () => {
+      headerOther.classList.add("active");
+      menu.classList.add("hide");
+      headerLogo.classList.add("mob-search");
+    });
   }
 
   const brandsSection = document.querySelector(".brands");
@@ -192,7 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       elLinkActive ? elLinkActive.classList.remove("tabs-btn_active") : null;
       elPaneShow ? elPaneShow.classList.remove("tabs-pane_show") : null;
-      elPaneAddlShow ? elPaneAddlShow.classList.remove("tabs-pane_addl_show") : null;
+      elPaneAddlShow
+        ? elPaneAddlShow.classList.remove("tabs-pane_addl_show")
+        : null;
       elLinkTarget.classList.add("tabs-btn_active");
       elPaneTarget.classList.add("tabs-pane_show");
       elPaneAddlTarget.classList.add("tabs-pane_addl_show");

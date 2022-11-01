@@ -7,6 +7,10 @@
 .footer__inner {
   display: flex;
   align-items: stretch;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
 
 .footer-logo__wrapper {
@@ -15,6 +19,15 @@
   flex-direction: column;
 
   margin-right: 14rem;
+
+  @include breakpoint($lg-bp) {
+    margin-right: 5rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .footer-logo {
@@ -42,6 +55,18 @@
 
   width: 100%;
   max-width: 26rem;
+
+  @include breakpoint($lg-bp) {
+    gap: 1.8rem 4rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+    order: -1;
+    gap: 2rem;
+
+    margin-bottom: 5rem;
+  }
 }
 .footer-menu__link {
   font-size: 1.2rem;
@@ -55,6 +80,13 @@
   align-items: flex-end;
 
   margin-left: auto;
+
+  @include breakpoint($sm-bp) {
+    margin-left: 0;
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
 }
 .footer__privacy {
   font-size: 1.4rem;

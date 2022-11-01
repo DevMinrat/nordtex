@@ -3,8 +3,9 @@ layout: default-tpl
 title: Главная страница
 ---
 
-<section class="intro">
+<section class="intro intro-main">
     <div class="intro__wrapper">
+        <video src=""></video>
         <div class="video__start-btn">
             <svg>
                 <use href="#play-icon"></use>
@@ -17,7 +18,7 @@ title: Главная страница
     <div class="main-news__bg-word">новости</div>
     <div class="container">
         <h2 class="section-title">
-            Наши новости
+            <span class="section-title__text">Наши новости</span>
         </h2>
         <div class="main-news__inner">
             <div class="main-news__item mn-item">
@@ -33,7 +34,7 @@ title: Главная страница
                         со вкусами современных детей двух возрастных категорий – от 3 до 6 и от 7 до 12 лет.
                         Комплектация изделий - стандартный полутораспальный комплект, ткань - ранфорс из 100% хлопка.
                     </p>
-                    <a href="#" class="hollow-btn">
+                    <a href="#" class="mn-item__link hollow-btn">
                         Подробнее
                         <div class="arrow-icon">
                             <span></span>
@@ -138,7 +139,9 @@ title: Главная страница
     <div class="container">
         <div class="main-brands__inner">
             <div class="main-brands__content">
-                <h2 class="section-title">Наши бренды</h2>
+                <h2 class="section-title">
+                    <span class="section-title__text">Наши бренды</span>
+                </h2>
                 <div class="main-brands__descr">
                     <p>Все торговые марки Nordtex разработаны для различных ценовых сегментов и отвечают уникальным
                         запросам целевых аудиторий.
@@ -148,7 +151,7 @@ title: Главная страница
                         до продуманной маркетинговой стратегии. Только так может появляться продукт, предвосхищающий
                         ожидания!</p>
                 </div>
-                <a href="#" class="hollow-btn">
+                <a href="#" class="main-brands__link hollow-btn">
                     Все бренды
                     <div class="arrow-icon">
                         <span></span>
@@ -163,16 +166,28 @@ title: Главная страница
                 <img src="assets/images/brands/brand-5.svg" alt="">
                 <img src="assets/images/brands/brand-6.svg" alt="">
             </div>
+            <a href="#" class="main-brands__link--mob hollow-btn">
+                Все бренды
+                <div class="arrow-icon">
+                    <span></span>
+                </div>
+            </a>
         </div>
     </div>
 </section>
 
 <section class="main-recruiting section">
+    <div class="main-recruiting__bg-word">Работа</div>
     <div class="container">
         <div class="main-recruiting__inner">
+            <h2 class="section-title section-title--mob">
+                <span class="section-title__text">Рекрутинг</span>
+            </h2>
             <img class="main-recruiting__img" src="assets/images/rectuiting/recruiting-img.jpg" alt="">
             <div class="main-recruiting__content">
-                <h2 class="section-title">Рекрутинг</h2>
+                <h2 class="section-title">
+                    <span class="section-title__text">Рекрутинг</span>
+                </h2>
                 <div class="main-recruiting__descr">
                     <p>В Nordtex верят, что сотрудники – это самый важный и ценный актив компании. Одна из наших
                         ключевых задач – формировать рабочую среду, в которой навыки и таланты могут развиваться в
@@ -185,13 +200,13 @@ title: Главная страница
                     </p>
                 </div>
                 <div class="main-recruiting__links">
-                    <a href="#" class="filled-btn">
+                    <a href="#" class="main-recruiting__links-item filled-btn">
                         Подробнее
                         <div class="arrow-icon">
                             <span></span>
                         </div>
                     </a>
-                    <button class="hollow-btn" data-modal="modal-resume">
+                    <button class="main-recruiting__links-item hollow-btn" data-modal="modal-resume">
                         Отправить резюме
                     </button>
                 </div>

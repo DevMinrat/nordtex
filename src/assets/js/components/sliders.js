@@ -18,8 +18,19 @@ if (document.querySelector(".main-news__slider")) {
     // snap: true,
     // flickPower: 200,
 
-    mediaQuery: "min",
-    breakpoints: {},
+    breakpoints: {
+      1024: {
+        padding: { left: "3rem", right: "3rem" },
+        gap: "3rem",
+      },
+      920: {
+        gap: "2rem",
+        arrows: false,
+      },
+      500: {
+        padding: { left: "1.5rem", right: "1.5rem" },
+      },
+    },
   }).mount();
 }
 

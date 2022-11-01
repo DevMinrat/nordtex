@@ -1,7 +1,22 @@
 .intro {
-  height: 62rem;
+  height: 49rem;
 
   background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
+
+  @include breakpoint($lg-bp) {
+    height: 43.3rem;
+  }
+  @include breakpoint($sm-bp) {
+    // height: 43.3rem;
+  }
+}
+
+.intro-main {
+  height: 62rem;
+
+  @include breakpoint($lg-bp) {
+    height: 43.3rem;
+  }
 }
 
 .intro-bg {
@@ -39,6 +54,11 @@
   background: rgba(244, 244, 244, 0.2);
   border-radius: 50%;
   border: 0.1rem solid #ffffff;
+
+  @include breakpoint($lg-bp) {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
 
   &:hover {
     background: transparent;

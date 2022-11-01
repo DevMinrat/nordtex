@@ -1,10 +1,12 @@
 .section {
   padding: 10rem 0;
+
+  @include breakpoint($lg-bp) {
+    padding: 7rem 0;
+  }
 }
 
 .section-title {
-  position: relative;
-
   font-weight: 700;
   font-size: 4rem;
   line-height: 100%;
@@ -14,11 +16,24 @@
   margin-bottom: 3rem;
   padding-left: 8rem;
 
+  @include breakpoint($lg-bp) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding-left: 0;
+  }
+}
+
+.section-title__text {
+  position: relative;
+  z-index: 1;
+
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -8rem;
     z-index: 1;
     transform: translateY(-50%);
 
@@ -26,6 +41,16 @@
     height: 0.4rem;
 
     background: $black;
+
+    @include breakpoint($sm-bp) {
+      top: unset;
+      bottom: 2.3rem;
+      left: unset;
+      right: calc(-300% - 2rem);
+      transform: none;
+
+      width: 300%;
+    }
   }
 }
 
