@@ -1,6 +1,12 @@
 .pci {
+  @include breakpoint($sm-bp) {
+    padding-bottom: 14rem;
+
+    background-color: #f4f4f4;
+  }
+
   .intro__wrapper {
-    padding-top: 17.5rem;
+    padding-top: 14rem;
   }
 }
 
@@ -8,21 +14,37 @@
   display: flex;
   align-items: stretch;
   gap: 4rem;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
 
 .pci-news__img {
   align-self: flex-start;
 
   width: 100%;
-  max-width: 56rem;
+  max-width: 46rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 34.6rem;
+  }
 }
 
 .pci-news__content {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
+
+  @include breakpoint($lg-bp) {
+    gap: 3rem;
+  }
 
   .pci-news__link {
+    font-size: 2rem;
+
+    padding: 0;
+
     border: none;
 
     &:hover {
@@ -34,21 +56,53 @@
 .pci-news__date {
   color: white;
   opacity: 0.8;
+
+  @include breakpoint($lg-bp) {
+    color: $black;
+  }
 }
 .pci-news__title {
   color: white;
   font-weight: 700;
   font-size: 3rem;
+  text-transform: uppercase;
+
+  @include breakpoint($lg-bp) {
+    font-size: 2rem;
+    color: $black;
+  }
 }
 .pci-news__descr {
   color: white;
   opacity: 0.8;
+
+  @include breakpoint($lg-bp) {
+    display: none;
+  }
+}
+
+.prc {
+  background: #f4f4f4;
+
+  &.section {
+    @include breakpoint($sm-bp) {
+      padding-top: 0;
+    }
+  }
 }
 
 .prc__inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 1.8rem;
+  }
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .prc-search {
@@ -57,6 +111,10 @@
   height: 4.6rem;
 
   margin: 0 auto;
+
+  @include breakpoint($lg-bp) {
+    max-width: 100%;
+  }
 }
 
 .prc-search__input {
@@ -67,6 +125,11 @@
   padding: 1.2rem 5rem 1.2rem 1.6rem;
 
   border: 0.1rem solid rgba(51, 59, 72, 0.3);
+  background: transparent;
+
+  @include breakpoint($lg-bp) {
+    max-width: 100%;
+  }
 
   &::placeholder {
     font-weight: 700;

@@ -1,0 +1,90 @@
+.hollow-btn {
+  width: max-content;
+  height: 4.8rem;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.6rem;
+  color: $primary;
+  text-transform: uppercase;
+
+  padding: 1.2rem 3rem;
+
+  background-color: transparent;
+  border: 1px solid $primary;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: white;
+
+    background-color: $accent;
+    border-color: $accent;
+
+    .arrow-icon {
+      width: 3.4rem;
+
+      span {
+        width: 3.4rem;
+
+        background: #fff;
+      }
+    }
+  }
+}
+
+.arrow-icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  margin-left: 1.2rem;
+  margin-bottom: 0.3rem;
+
+  transition: inherit;
+
+  & span {
+    display: block;
+
+    position: relative;
+
+    width: 1.2rem;
+    height: 2px;
+
+    background: $primary;
+
+    transition: width 0.1s linear;
+  }
+  & span::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    top: -3px;
+    right: -2px;
+    background: inherit;
+
+    transform: rotate(45deg);
+  }
+  & span::before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    top: 3px;
+    right: -2px;
+    background: inherit;
+
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    span {
+      width: 3.4rem;
+    }
+  }
+}

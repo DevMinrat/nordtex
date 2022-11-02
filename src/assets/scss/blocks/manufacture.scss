@@ -4,8 +4,16 @@
   background: url(../images/manufacture/mfr-bnf-bg.png) no-repeat;
   background-size: cover;
 
+  @include breakpoint($sm-bp) {
+    padding-top: 8rem;
+  }
+
   .about-nordtex__title {
     margin-bottom: 14rem;
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 8rem;
+    }
   }
 
   .splide__track {
@@ -41,6 +49,12 @@
   }
 }
 
+.mfr-factories {
+  @include breakpoint($lg-bp) {
+    margin-bottom: 3.5rem;
+  }
+}
+
 .mfr-factories__item {
   display: flex;
   align-items: stretch;
@@ -52,8 +66,23 @@
   background-size: 87.6rem;
   background-position: right;
 
+  @include breakpoint($lg-bp) {
+    flex-direction: column;
+
+    padding: 3.5rem 3rem;
+    margin-left: 0;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding: 3.5rem 1.5rem;
+  }
+
   & + & {
     margin-top: 5rem;
+
+    @include breakpoint($lg-bp) {
+      margin-top: 0;
+    }
   }
 
   &:nth-child(even) {
@@ -64,9 +93,19 @@
 
     background-position: left;
 
+    @include breakpoint($lg-bp) {
+      flex-direction: column;
+
+      margin-right: 0;
+    }
+
     .mfr-factories__item-img {
       margin-right: 0;
       margin-left: 10rem;
+
+      @include breakpoint($lg-bp) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -80,6 +119,18 @@
   object-fit: cover;
 
   margin-right: 10rem;
+
+  @include breakpoint($lg-bp) {
+    width: 70.8rem;
+    height: 36rem;
+
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  @include breakpoint($sm-bp) {
+    width: 34.5rem;
+    height: 22.1rem;
+  }
 }
 .mfr-factories__item-content {
   display: flex;

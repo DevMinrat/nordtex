@@ -25,6 +25,10 @@
   }
 }
 
+.section-title__descr {
+  font-size: 2rem;
+}
+
 .section-title__text {
   position: relative;
   z-index: 1;
@@ -62,4 +66,8 @@
 
 .section-header {
   margin-bottom: 10rem;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: 7rem;
+  }
 }

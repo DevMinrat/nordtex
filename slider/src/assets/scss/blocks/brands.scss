@@ -1,0 +1,43 @@
+.brands {
+  background: url(../images/brands-section/brands-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.brands__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.brands-item {
+  min-height: 44rem;
+
+  padding: 2rem 2.8rem 3.6rem;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+}
+.brands-item__img {
+  width: 100%;
+
+  margin-bottom: 2.5rem;
+}
+.brands-item__link {
+  width: 100%;
+  max-width: unset;
+
+  justify-content: center;
+
+  margin-bottom: 3rem;
+}
+
+.brands-item__title {
+  font-weight: 700;
+  opacity: 0.8;
+
+  margin-bottom: 1rem;
+}
+.brands-item__descr {
+  opacity: 0.8;
+}

@@ -52,6 +52,14 @@ if (document.querySelector(".about-gds__slider")) {
     breakpoints: {
       921: {
         destroy: true,
+        gap: "4rem",
+      },
+      501: {
+        gap: "3rem",
+        destroy: false,
+      },
+      300: {
+        destroy: true,
       },
     },
   }).mount();
@@ -74,6 +82,10 @@ if (document.querySelector(".mfr-bnf__slider")) {
     breakpoints: {
       921: {
         drag: false,
+        gap: "3.1rem",
+      },
+      300: {
+        gap: "2rem",
       },
     },
   }).mount();
@@ -89,6 +101,18 @@ if (document.querySelector(".factory-info__main-slider")) {
     pagination: false,
     arrows: false,
     focus: "center",
+    classes: {
+      arrows: "splide__arrows",
+      arrow: "splide__arrow",
+      prev: "splide__arrow--prev",
+      next: "splide__arrow--next",
+    },
+
+    breakpoints: {
+      500: {
+        arrows: true,
+      },
+    },
   });
 
   var factoryThumbSlider = new Splide(".factory-info__thumb-slider", {
@@ -98,12 +122,27 @@ if (document.querySelector(".factory-info__main-slider")) {
     rewind: true,
     pagination: false,
     isNavigation: true,
+    padding: { left: "31.2rem", right: "3rem" },
 
     classes: {
-      arrows: "splide__arrows your-class-arrows",
-      arrow: "splide__arrow your-class-arrow",
-      prev: "splide__arrow--prev your-class-prev",
-      next: "splide__arrow--next your-class-next",
+      arrows: "splide__arrows",
+      arrow: "splide__arrow",
+      prev: "splide__arrow--prev",
+      next: "splide__arrow--next",
+    },
+
+    breakpoints: {
+      1024: {
+        padding: { left: "22rem", right: "3rem" },
+        destroy: false,
+      },
+      920: {
+        padding: { left: "13.4rem", right: "3rem" },
+        destroy: false,
+      },
+      500: {
+        destroy: true,
+      },
     },
   });
 

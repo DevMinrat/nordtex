@@ -1,0 +1,202 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+
+  transition: all 0.2s linear;
+  transform: translateY(0);
+
+  background: rgba(15, 54, 43, 0.5);
+
+  @include breakpoint($lg-bp) {
+    padding: 2rem 0;
+  }
+
+  &.white {
+    background: rgba(15, 54, 43, 0.05);
+
+    .header__logo svg {
+      fill: $secondary;
+    }
+
+    .nav-list__item-link {
+      color: $black;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    .header__tel-descr {
+      color: $black;
+    }
+    .header-search__icon svg {
+      fill: $black;
+    }
+  }
+}
+
+.header.out {
+  transform: translateY(-100%);
+  box-shadow: none;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+
+  height: 9rem;
+}
+
+.header__logo {
+  margin-right: 9rem;
+
+  svg {
+    width: 12.9rem;
+    height: 3.7rem;
+
+    fill: white;
+  }
+}
+
+.menu__nav-list {
+  display: flex;
+  align-items: center;
+
+  margin-right: 5rem;
+}
+
+.nav-list__item + .nav-list__item {
+  margin-left: 2.7rem;
+
+  @include breakpoint($sm-bp) {
+    margin-left: 0;
+    // margin-top: 4rem;
+  }
+}
+
+.nav-list__item-link {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffffff;
+  opacity: 0.8;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #c1a478;
+  }
+}
+
+.header-orher {
+  display: flex;
+  align-items: center;
+}
+
+.header__tel {
+  margin-right: 2.4rem;
+  text-align: right;
+}
+
+.header__tel-link {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #c1a478;
+}
+
+.header__tel-descr {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.header-search__icon {
+  opacity: 0.2;
+  cursor: pointer;
+
+  transition: all 0.1s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    width: 2.6rem;
+    height: 2.6rem;
+
+    fill: white;
+  }
+}
+
+.about-menu {
+  padding: 1.1rem 0;
+
+  background: rgba(15, 54, 43, 0.3);
+}
+
+.about-menu__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-menu__link {
+  font-size: 1.4rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  left: 1rem;
+
+  width: 2.5rem;
+  height: 2rem;
+
+  cursor: pointer;
+
+  @include breakpoint($sm-bp) {
+    display: block;
+  }
+}
+
+.burger {
+  top: 70%;
+}
+
+.burger::after {
+  content: "";
+  bottom: 7px;
+}
+
+.burger,
+.burger::after {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+
+  display: block;
+
+  width: 2.5rem;
+  height: 0.1rem;
+
+  background-color: #000;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-menu.menu-on .burger::after {
+  transform: translateX(-50%) rotate(-90deg);
+  bottom: 0px;
+}
+
+.burger-menu.menu-on .burger {
+  transform: translateX(-50%) rotate(45deg);
+}

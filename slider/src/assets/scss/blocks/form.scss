@@ -1,0 +1,126 @@
+input,
+textarea {
+  width: 100%;
+
+  padding: 1.4rem 2.1rem;
+
+  border: 0.1rem solid #adb1b6;
+  outline: none;
+  background: white;
+
+  &::placeholder {
+    font-family: "Circe";
+    color: #adb1b6;
+  }
+}
+
+input {
+  height: 5rem;
+}
+
+.required-input__wrapper {
+  position: relative;
+  height: 5rem;
+
+  &.error {
+    input {
+      border-color: #ff0000;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 1.3rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: 1.6rem;
+      height: 1.6rem;
+
+      background: url(../images/icons/warning.svg) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.required-input[required] + label {
+  color: #adb1b6;
+  font-family: "Circe";
+  font-size: 1.6rem;
+  position: absolute;
+  left: 2.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.required-input[required] + label:after {
+  content: "*";
+  color: #ff0000;
+}
+
+.required-input[required]:invalid + label {
+  display: inline-block;
+}
+
+.required-input[required]:valid + label {
+  display: none;
+}
+
+.error-req-fields {
+  color: #ff0000;
+
+  margin-bottom: 3rem;
+}
+
+select {
+  height: 4.8rem;
+
+  border: 0.1rem solid $primary;
+  border-radius: 0;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $primary;
+
+  padding: 1.2rem 3rem;
+
+  outline: none;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_108672_4171' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='10'%3E%3Crect width='20' height='10' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_108672_4171)'%3E%3Cpath d='M0.570312 0H19.4265L9.9984 9.42809L0.570312 0Z' fill='%23C1A478'/%3E%3C/g%3E%3C/svg%3E%0A"),
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 3rem top 50%, 0 0;
+  background-size: 2rem 1rem, 100%;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.form-attach {
+  margin-bottom: 2.4rem;
+}
+.form-attach__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.form-attach__input {
+  height: auto;
+  border: none;
+  padding: 0;
+}

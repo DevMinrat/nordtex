@@ -1,0 +1,292 @@
+.contacts {
+  .section-title {
+    margin-bottom: 5rem;
+  }
+}
+
+.contacts__phone-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  margin-bottom: 6rem;
+}
+.contacts__phone {
+  display: flex;
+  align-items: center;
+
+  margin-right: 2rem;
+
+  &:hover {
+    span {
+      color: $accent;
+    }
+  }
+
+  span {
+    font-size: 3rem;
+    color: $secondary;
+    padding-top: 0.5rem;
+  }
+}
+.contacts__phone-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 1rem;
+
+  background: $secondary;
+  border-radius: 50%;
+
+  svg {
+    width: 0.8rem;
+    height: 0.9rem;
+
+    fill: white;
+  }
+}
+.contacts__phone-info {
+  color: $black;
+  opacity: 0.8;
+}
+
+.contacts-soc {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 5rem;
+
+  & .soc-link.tg-icon {
+    margin-right: 1rem;
+    background: #27a6e5;
+  }
+  & .soc-link.whatsap-icon {
+    margin-right: 1rem;
+    background: #25d366;
+  }
+}
+.contacts-soc__descr {
+  font-size: 2rem;
+
+  margin-right: 2rem;
+}
+
+.contacts-soc__chat-link {
+  width: max-content;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-transform: uppercase;
+
+  padding: 0 2rem;
+
+  background: $secondary;
+  border-radius: 15rem;
+
+  &:hover {
+    color: white;
+    background-color: #357967;
+
+    .arrow-icon {
+      width: 4.6rem;
+
+      overflow: visible;
+
+      span {
+        width: 3.4rem;
+      }
+    }
+  }
+
+  .arrow-icon {
+    width: 0;
+    overflow: hidden;
+
+    margin-left: 0;
+
+    span {
+      margin-left: 1.2rem;
+
+      background: #fff;
+    }
+  }
+}
+
+.contacts-form {
+  padding: 6rem;
+
+  background: #f4f4f4;
+
+  margin-bottom: 10rem;
+
+  input,
+  textarea {
+    border-color: transparent;
+  }
+}
+
+.contacts-form__title {
+  font-size: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.contacts-form__fields {
+  display: grid;
+  grid-template-columns: 54rem 49rem;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.contacts-form__fields-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacts-form__fields-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cf-textarea {
+  min-height: 11rem;
+}
+
+.contacts-form__footer {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.contacts-form__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  color: #adb1b6;
+}
+.form-privacy {
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.contacts-addrs {
+  display: flex;
+  align-items: flex-start;
+  gap: 14rem;
+}
+
+.contacts-addrs__inner {
+  width: 100%;
+  max-width: 36rem;
+}
+
+.contacts-addrs__btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 5rem;
+}
+
+.contacts-addrs__tabs-btn {
+  color: #999da4;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.tabs-btn_active {
+    color: $secondary;
+  }
+}
+
+.contacts-addrs__content {
+  margin-bottom: 3rem;
+}
+
+.contacts-addrs__maps {
+  width: 100%;
+  max-width: 66rem;
+}
+
+.contacts-addrs__tabs-map {
+  width: 100%;
+  max-width: 66rem;
+  height: 36.5rem;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contacts-addrs__info-sity {
+  color: $secondary;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+
+  margin-bottom: 3rem;
+}
+
+.contacts-addrs__info-tel,
+.contacts-addrs__info-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contacts-addrs__info-tel {
+  margin-bottom: 2rem;
+
+  color: $black;
+
+  &:hover {
+    color: $accent;
+  }
+
+  .contacts-addrs__icon-wrapper {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $secondary;
+    border-radius: 50%;
+
+    svg {
+      width: 0.8rem;
+      height: 0.9rem;
+
+      fill: white;
+    }
+  }
+}
+
+.contacts-addrs__info-address {
+  svg {
+    width: 100%;
+    max-width: 2.4rem;
+    height: 3.6rem;
+
+    fill: $secondary;
+  }
+}

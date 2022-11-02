@@ -1,15 +1,28 @@
 .search {
   padding: 19rem 0 10rem;
 
+  @include breakpoint($lg-bp) {
+    padding: 16rem 0 7rem;
+  }
+
   .section-title {
     margin-bottom: 5rem;
   }
 }
 
 .search-results {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 1.6rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+  }
 
   mark {
     background-color: #18a0fb;
@@ -19,6 +32,19 @@
 .search-select {
   width: 100%;
   max-width: 26rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 16.3rem;
+    margin-left: auto;
+
+    padding: 1.2rem 2rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: 16rem;
+
+    margin-top: 3rem;
+  }
 }
 
 .search-filter__btn {
@@ -30,6 +56,13 @@
   & + & {
     margin-left: 4rem;
     margin-right: 14rem;
+
+    @include breakpoint($lg-bp) {
+      margin-right: 0;
+    }
+    @include breakpoint($sm-bp) {
+      margin-left: auto;
+    }
   }
 
   .hollow-btn {
@@ -49,11 +82,23 @@
   display: flex;
   align-items: center;
 
+  @include breakpoint($lg-bp) {
+    flex-wrap: wrap;
+  }
+
   .prc-search {
     width: 100%;
     max-width: 36rem;
 
     margin: 0;
     margin-right: 4rem;
+
+    @include breakpoint($lg-bp) {
+      order: -1;
+      max-width: 100%;
+
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 }

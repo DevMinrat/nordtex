@@ -8,11 +8,18 @@
 }
 
 .career__inner {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 8.2rem 6.8rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .career-item {
@@ -22,6 +29,10 @@
 
   width: 100%;
   max-width: 30.5rem;
+
+  @include breakpoint($sm-bp) {
+    margin: 0 auto;
+  }
 }
 .career-item__icon {
   align-self: center;
@@ -65,6 +76,10 @@
   justify-content: center;
 
   background: #053628;
+
+  @include breakpoint($lg-bp) {
+    order: 12;
+  }
 
   &:hover {
     .career-item__offer-img {

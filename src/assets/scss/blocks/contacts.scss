@@ -9,6 +9,14 @@
   align-items: flex-end;
 
   margin-bottom: 6rem;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    margin-bottom: 2.6rem;
+  }
 }
 .contacts__phone {
   display: flex;
@@ -59,6 +67,10 @@
 
   margin-bottom: 5rem;
 
+  @include breakpoint($sm-bp) {
+    flex-wrap: wrap;
+  }
+
   & .soc-link.tg-icon {
     margin-right: 1rem;
     background: #27a6e5;
@@ -72,6 +84,13 @@
   font-size: 2rem;
 
   margin-right: 2rem;
+
+  @include breakpoint($sm-bp) {
+    width: 100%;
+
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .contacts-soc__chat-link {
@@ -126,6 +145,11 @@
 
   margin-bottom: 10rem;
 
+  @include breakpoint($sm-bp) {
+    padding: 3.5rem 3rem 6rem;
+    margin-bottom: 5rem;
+  }
+
   input,
   textarea {
     border-color: transparent;
@@ -144,6 +168,10 @@
   gap: 1rem;
 
   margin-bottom: 2rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts-form__fields-column {
@@ -156,6 +184,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cf-textarea {
@@ -166,7 +198,23 @@
   display: flex;
   align-items: center;
   gap: 4rem;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
+
+.contacts-form__submit-btn {
+  @include breakpoint($lg-bp) {
+    width: 100%;
+    max-width: 23rem;
+  }
+  @include breakpoint($sm-bp) {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
 .contacts-form__info {
   display: flex;
   flex-direction: column;
@@ -174,15 +222,14 @@
 
   color: #adb1b6;
 }
-.form-privacy {
-  span {
-    text-decoration: underline;
-    cursor: pointer;
-    transition: all 0.1s linear;
 
-    &:hover {
-      color: $accent;
-    }
+.modal-privacy__link {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.1s linear;
+
+  &:hover {
+    color: $accent;
   }
 }
 
@@ -190,6 +237,14 @@
   display: flex;
   align-items: flex-start;
   gap: 14rem;
+
+  @include breakpoint($lg-bp) {
+    gap: 1.6rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
 
 .contacts-addrs__inner {

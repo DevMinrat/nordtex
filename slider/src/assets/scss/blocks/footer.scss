@@ -1,0 +1,93 @@
+.footer {
+  padding: 5rem 0 8rem;
+
+  border-top: 0.1rem solid rgba(51, 59, 72, 0.1);
+}
+
+.footer__inner {
+  display: flex;
+  align-items: stretch;
+}
+
+.footer-logo__wrapper {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+
+  margin-right: 14rem;
+}
+
+.footer-logo {
+  width: 14rem;
+  height: 4rem;
+
+  fill: $secondary;
+
+  margin-bottom: 2rem;
+}
+.footer-tel {
+  font-size: 2rem;
+  color: $black;
+  text-align: left;
+  text-transform: uppercase;
+}
+.footer-tel-descr {
+  font-size: 1.3rem;
+  color: rgba(51, 59, 72, 0.5);
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem 7rem;
+
+  width: 100%;
+  max-width: 26rem;
+}
+.footer-menu__link {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $black;
+}
+.footer-soc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-left: auto;
+}
+.footer__privacy {
+  font-size: 1.4rem;
+  color: rgba(51, 59, 72, 0.5);
+}
+.soc-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  background: #f4f4f4;
+  border-radius: 3rem;
+}
+.soc-link {
+  width: 4rem;
+  height: 4rem;
+
+  background: #adb1b6;
+  border-radius: 50%;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+
+    fill: white;
+  }
+
+  &.tg-icon:hover {
+    background: #27a6e5;
+  }
+  &.whatsap-icon:hover {
+    background: #25d366;
+  }
+}

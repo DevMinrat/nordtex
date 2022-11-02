@@ -187,10 +187,6 @@
       }
     }
   }
-
-  @include breakpoint($lg-bp) {
-    max-width: 27.5rem;
-  }
 }
 
 .mn-si {
@@ -198,6 +194,7 @@
 
   @include breakpoint($lg-bp) {
     opacity: 1;
+    max-width: 27.5rem;
   }
 
   &.is-visible {

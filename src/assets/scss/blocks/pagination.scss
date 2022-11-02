@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+
+  @include breakpoint($sm-bp) {
+    gap: 2rem;
+  }
 }
 
 .pagination-link {

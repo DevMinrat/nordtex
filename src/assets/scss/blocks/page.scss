@@ -5,6 +5,14 @@
 .page-title__wrapper {
   padding-top: 25rem;
 
+  @include breakpoint($lg-bp) {
+    padding-top: 19rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding-top: 37rem;
+  }
+
   .bracket {
     display: block;
     text-align: center;
@@ -24,6 +32,14 @@
 
   margin-bottom: 4.5rem;
   margin-top: 2rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 2.5rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    color: $black;
+  }
 }
 
 .bracket {
@@ -48,6 +64,10 @@
   margin: 10rem 0;
 
   transition: all 0.1s liner;
+
+  @include breakpoint($lg-bp) {
+    margin: 7rem 0;
+  }
 
   &:hover {
     color: $accent;

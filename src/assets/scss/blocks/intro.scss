@@ -1,13 +1,11 @@
 .intro {
   height: 49rem;
 
-  background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
-
   @include breakpoint($lg-bp) {
     height: 43.3rem;
   }
   @include breakpoint($sm-bp) {
-    // height: 43.3rem;
+    height: unset;
   }
 }
 
@@ -20,8 +18,23 @@
 }
 
 .intro-bg {
+  position: relative;
+
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include breakpoint($sm-bp) {
+    background-size: auto 21rem;
+    background-position: center 9rem;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background: rgba(9, 85, 64, 0.5);
+  }
 }
 
 .intro__wrapper {
@@ -30,7 +43,10 @@
   width: 100%;
   height: 100%;
 
-  background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
+  @include breakpoint($sm-bp) {
+    background-size: 100% 21rem;
+    background-position: center 9rem;
+  }
 }
 
 .video__start-btn {

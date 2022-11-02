@@ -1,22 +1,48 @@
 .news {
-  display: grid;
-  grid-template-areas:
-    "bl bl"
-    "nc img";
-  grid-template-columns: 66rem 58rem;
-  column-gap: 4rem;
-
   padding: 19rem 0 10rem 12rem;
 
-  .page__back-link {
-    grid-area: bl;
+  @include breakpoint($xl-bp) {
+    grid-template-columns: 60rem 44rem;
+  }
 
+  @include breakpoint($lg-bp) {
+    padding: 16rem 0 7rem 3rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding: 16rem 1.5rem 7rem;
+  }
+
+  .page__back-link {
     margin-top: 0;
   }
 }
 
 .news-content {
-  grid-area: nc;
+  display: grid;
+  grid-template-areas:
+    "nh img"
+    "nd img";
+  grid-template-columns: 66rem 58rem;
+  column-gap: 4rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-areas:
+      "nh img"
+      "nd nd";
+    grid-template-columns: 34.6rem 37.6rem;
+    gap: 5rem 1.6rem;
+    align-items: center;
+  }
+
+  @include breakpoint($sm-bp) {
+    grid-template-areas:
+      "img"
+      "nh"
+      "nd";
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 .news__date {
   color: $secondary;
@@ -28,10 +54,24 @@
 .news__title {
   font-weight: 700;
   font-size: 4rem;
+  text-transform: uppercase;
 
   margin-bottom: 3rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 3rem;
+  }
+}
+.news__header {
+  grid-area: nh;
 }
 .news__descr {
+  grid-area: nd;
+
+  @include breakpoint($lg-bp) {
+    max-width: 70.8rem;
+  }
+
   ul {
     padding-left: 2.3rem;
     list-style: outside disc;
@@ -52,12 +92,43 @@
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 58rem;
+
+  @include breakpoint($lg-bp) {
+    padding: 3rem 0 0 3rem;
+
+    background-size: 37.6rem 25rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding: 0;
+    margin-bottom: 5rem;
+
+    background: none !important;
+  }
 }
 .news-img {
   width: 100%;
   max-width: 40rem;
 
   margin-bottom: 4rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 30rem;
+  }
+  @include breakpoint($lg-bp) {
+    max-width: 30.7rem;
+    height: 32rem;
+
+    object-fit: cover;
+
+    margin-bottom: 3rem;
+  }
+  @include breakpoint($sm-bp) {
+    max-width: 34.5rem;
+    height: 42.5rem;
+
+    margin-bottom: 0;
+  }
 }
 .news-img__descr {
   width: 100%;
@@ -65,4 +136,15 @@
 
   font-weight: 700;
   font-size: 2rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 30rem;
+  }
+
+  @include breakpoint($lg-bp) {
+    font-size: 1.6rem;
+  }
+  @include breakpoint($sm-bp) {
+    display: none;
+  }
 }

@@ -1,0 +1,67 @@
+.team-descr {
+  background: url(../images/team/team-descr-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.team-descr__content {
+  display: flex;
+  gap: 11rem;
+
+  width: 100%;
+  max-width: 96rem;
+
+  margin: 0 auto;
+
+  .cite-heading {
+    width: 100%;
+    max-width: 46rem;
+  }
+}
+
+.team-descr__info {
+  width: 100%;
+  max-width: 39rem;
+}
+
+.team-management {
+  padding-bottom: 10rem;
+}
+
+.team-management__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.team-management__item {
+  text-align: center;
+
+  padding: 2rem 2rem 3rem;
+
+  background: #eeeded;
+
+  &--offer {
+    transition: all 0.1s linear;
+
+    &:hover {
+      background: $secondary;
+    }
+  }
+}
+.team-management__item-img {
+  width: 100%;
+
+  margin-bottom: 3rem;
+}
+.team-management__item-name {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 140%;
+  color: $black;
+}
+
+.team-management__item-link {
+  max-width: 25rem;
+
+  margin: 0 auto;
+}

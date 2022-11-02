@@ -3,6 +3,10 @@
 
   background: url(../images/about/about-benefits-bg.jpg) no-repeat;
   background-size: cover;
+
+  @include breakpoint($sm-bp) {
+    padding: 7rem 0;
+  }
 }
 
 .about-nordtex__title {
@@ -24,6 +28,15 @@
     z-index: 2;
   }
 
+  @include breakpoint($sm-bp) {
+    width: 100%;
+    max-width: 31.5rem;
+
+    font-size: 2rem;
+
+    margin: 0 auto 5rem;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -40,6 +53,13 @@
 
     opacity: 0.07;
     filter: brightness(0);
+
+    @include breakpoint($sm-bp) {
+      top: 10%;
+
+      width: 24rem;
+      height: 6.9rem;
+    }
   }
 }
 .about-benefits__inner {
@@ -48,12 +68,21 @@
   justify-content: center;
 
   width: 100%;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column-reverse;
+  }
 }
+
 .about-benefits__info {
   width: 100%;
   max-width: 46rem;
 
   margin-right: 4rem;
+
+  @include breakpoint($sm-bp) {
+    margin-right: 0;
+  }
 }
 .about-benefits__video-wrapper {
   position: relative;
@@ -63,6 +92,10 @@
   height: 33.8rem;
 
   background: linear-gradient(0deg, rgba(9, 85, 64, 0.5), rgba(9, 85, 64, 0.5));
+
+  @include breakpoint($sm-bp) {
+    margin-bottom: 4rem;
+  }
 }
 .video__start-btn {
   width: 9rem;
@@ -76,23 +109,48 @@
   background-size: contain;
   background-position: center right;
 
+  @include breakpoint($sm-bp) {
+    // padding-top: 7rem;
+
+    background-size: 100% 61.3rem;
+    background-position: top;
+  }
+
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
     right: 0;
+    pointer-events: none;
 
     width: 78rem;
     height: 23.6rem;
 
     background: url(../images/about/about-history-date.svg) no-repeat;
     background-size: cover;
+
+    @include breakpoint($lg-bp) {
+      width: 46.8rem;
+      height: 14.2rem;
+    }
+    @include breakpoint($sm-bp) {
+      width: 31.5rem;
+      height: 9.5rem;
+
+      bottom: unset;
+      top: 0;
+      left: 3rem;
+    }
   }
 }
 
 .about-history__inner {
   display: flex;
   align-items: center;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column-reverse;
+  }
 }
 
 .about-history__images {
@@ -102,19 +160,40 @@
   gap: 3rem;
 
   margin-right: 10rem;
+
+  @include breakpoint($lg-bp) {
+    margin-right: 5rem;
+    gap: 2rem;
+  }
+  @include breakpoint($sm-bp) {
+    align-items: flex-start;
+    margin-right: 0;
+  }
 }
 
 .about-history__big-img {
   width: 100%;
   max-width: 56rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 31.2rem;
+  }
 }
 .about-history__sm-img {
   width: 100%;
   max-width: 40rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 24.2rem;
+  }
 }
 .about-history__content {
   width: 100%;
   max-width: 40rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 30.7rem;
+  }
 }
 .about-history__title {
   font-weight: 700;
@@ -124,6 +203,10 @@
   color: #ffffff;
 
   margin-bottom: 1rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 3rem;
+  }
 }
 .about-history__descr {
   font-weight: 400;
@@ -133,16 +216,36 @@
   opacity: 0.8;
 
   margin-bottom: 4rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 2rem;
+
+    margin-bottom: 3rem;
+  }
+}
+
+.about-history__link {
+  @include breakpoint($sm-bp) {
+    margin-bottom: 5rem;
+  }
 }
 
 .about-team {
   padding: 10rem 0 5rem;
+
+  @include breakpoint($sm-bp) {
+    padding: 0 0 7rem;
+  }
 }
 
 .about-team__img {
   width: 100%;
 
   margin-bottom: 5rem;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: 4rem;
+  }
 }
 
 .about-team__title {
@@ -153,6 +256,10 @@
   color: $black;
 
   margin-bottom: 1rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 3rem;
+  }
 }
 
 .about-team__descr {
@@ -163,6 +270,18 @@
   opacity: 0.8;
 
   margin-bottom: 4rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 2rem;
+
+    margin-bottom: 3rem;
+  }
+}
+
+.about-team__link {
+  @include breakpoint($sm-bp) {
+    padding: 1rem 2.3rem;
+  }
 }
 
 .about-prod {
@@ -172,11 +291,28 @@
 
 .about-prod__inner {
   display: flex;
+
+  @include breakpoint($lg-bp) {
+    align-items: center;
+  }
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
 
 .about-prod__content {
   padding: 19.7rem 0;
   margin-top: 10rem;
+
+  @include breakpoint($lg-bp) {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  @include breakpoint($sm-bp) {
+    margin-bottom: 4rem;
+  }
 }
 
 .section-title {
@@ -189,6 +325,23 @@
 
   width: 58rem;
   height: 62.8rem;
+
+  @include breakpoint($xl-bp) {
+    width: 49rem;
+    height: 55rem;
+  }
+  @include breakpoint($lg-bp) {
+    width: 34rem;
+    height: 40.6rem;
+
+    right: -3rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 34.5rem;
+    height: 37.4rem;
+    right: 0;
+  }
 }
 
 .about-prod__big-img {
@@ -197,6 +350,12 @@
 
   position: absolute;
   top: 0;
+
+  object-fit: cover;
+
+  @include breakpoint($lg-bp) {
+    max-width: 34rem;
+  }
 }
 
 .about-prod__sm-img {
@@ -207,6 +366,23 @@
   left: 6rem;
   bottom: 0;
   z-index: 1;
+
+  object-fit: cover;
+
+  @include breakpoint($xl-bp) {
+    max-width: 32rem;
+  }
+  @include breakpoint($lg-bp) {
+    max-width: 22.7rem;
+
+    left: 4rem;
+    bottom: 3rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    left: 3rem;
+    bottom: 1rem;
+  }
 }
 
 .about-gds__header {
@@ -216,6 +392,14 @@
 
   margin-bottom: 5rem;
 
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+
+    margin-bottom: 4rem;
+  }
+
   .section-title {
     margin-bottom: 0;
   }
@@ -223,6 +407,18 @@
 
 .about-gds__slider.is-initialized:not(.is-active) .splide__list {
   gap: 4rem;
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+    gap: 7rem;
+  }
+}
+
+.about-gds__slider,
+.splide__track {
+  @include breakpoint($lg-bp) {
+    overflow: visible;
+  }
 }
 
 .about-gds__item {
@@ -231,6 +427,14 @@
 
   display: flex;
   flex-direction: column;
+
+  @include breakpoint($lg-bp) {
+    max-width: 27.5rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    max-width: unset;
+  }
 
   &:last-of-type {
     margin-right: 0 !important;
@@ -265,4 +469,12 @@
 
 .about-gds__item-link {
   margin-top: auto;
+
+  @include breakpoint($lg-bp) {
+    width: 100%;
+
+    justify-content: center;
+
+    padding: 1rem;
+  }
 }

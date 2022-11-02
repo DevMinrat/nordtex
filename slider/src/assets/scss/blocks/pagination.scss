@@ -1,0 +1,48 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 2rem;
+  color: $secondary;
+
+  padding: 0.3rem 1rem 0;
+
+  &.active {
+    color: $primary;
+  }
+}
+
+.pagination-arrow_prev,
+.pagination-arrow_next {
+  width: 2.6rem;
+  height: 2.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 0.1rem solid $primary;
+
+  svg {
+    width: 0.8rem;
+    height: 1.2rem;
+
+    stroke: $primary;
+  }
+
+  &.disabled {
+    opacity: 0.3;
+  }
+}
+
+.pagination-arrow_next {
+  svg {
+    transform: rotate(180deg);
+  }
+}

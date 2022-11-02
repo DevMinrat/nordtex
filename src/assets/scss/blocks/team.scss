@@ -1,6 +1,10 @@
 .team-descr {
   background: url(../images/team/team-descr-bg.png) no-repeat;
   background-size: cover;
+
+  .about-nordtex__title {
+    margin: 0 auto 5rem;
+  }
 }
 
 .team-descr__content {
@@ -11,6 +15,15 @@
   max-width: 96rem;
 
   margin: 0 auto;
+
+  @include breakpoint($lg-bp) {
+    gap: 1.6rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
 
   .cite-heading {
     width: 100%;
@@ -25,12 +38,25 @@
 
 .team-management {
   padding-bottom: 10rem;
+
+  @include breakpoint($lg-bp) {
+    padding-bottom: 7rem;
+  }
 }
 
 .team-management__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 1.7rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .team-management__item {
@@ -42,6 +68,10 @@
 
   &--offer {
     transition: all 0.1s linear;
+
+    @include breakpoint($lg-bp) {
+      order: 99;
+    }
 
     &:hover {
       background: $secondary;

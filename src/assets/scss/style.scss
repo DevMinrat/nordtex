@@ -92,6 +92,8 @@ svg {
 /* Vendors */
 
 @import "vendor/splide.scss";
+@import "vendor/swiper.scss";
+@import "vendor/swiper-vars.scss";
 
 /* Blocks */
 
@@ -111,6 +113,7 @@ svg {
 @import "blocks/main-recruiting.scss";
 
 @import "blocks/about.scss";
+@import "blocks/about-history.scss";
 @import "blocks/team.scss";
 @import "blocks/manufacture.scss";
 @import "blocks/factory.scss";

@@ -1,15 +1,27 @@
 <header class="header white">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">
+            <a class="header__logo" href="#">
                 <svg>
                     <use href="#logo"></use>
                 </svg>
-            </div>
+            </a>
             <nav class="menu">
+                <span class="modal-close-btn mob-menu_close">
+                    <svg>
+                        <use href="#close"></use>
+                    </svg>
+                </span>
                 <ul class="menu__nav-list">
                     <li class="nav-list__item">
                         <a href="#" class="nav-list__item-link">О компании</a>
+                        <span class="links-about_mob">
+                            <a class="links-about_mob-link" href="#">О нас</a>
+                            <a class="links-about_mob-link" href="#">Команда</a>
+                            <a class="links-about_mob-link" href="#">История</a>
+                            <a class="links-about_mob-link" href="#">Наши производства</a>
+                            <a class="links-about_mob-link" href="#">Наша продукция</a>
+                        </span>
                     </li>
                     <li class="nav-list__item">
                         <a href="#" class="nav-list__item-link">Купить</a>
@@ -27,6 +39,25 @@
                         <a href="#" class="nav-list__item-link">Контакты</a>
                     </li>
                 </ul>
+
+                <div class="mob-menu_links">
+                    <div class="header__tel--mob">
+                        <a class="header__tel-link" href="tel:123">+7 (800) 333-01-07</a>
+                        <p class="header__tel-descr">Для звонков по России</p>
+                    </div>
+                    <div class="soc-links">
+                        <a class="soc-link tg-icon" href="#">
+                            <svg>
+                                <use href="#tg-icon"></use>
+                            </svg>
+                        </a>
+                        <a class="soc-link whatsap-icon" href="#">
+                            <svg>
+                                <use href="#whatsap-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </nav>
 
             <div class="header-orher">
@@ -35,6 +66,7 @@
                     <p class="header__tel-descr">Для звонков по России</p>
                 </div>
                 <div class="header-search">
+                    <input class="header-search__input" type="text" placeholder="Введите запрос">
                     <div class="header-search__icon">
                         <svg>
                             <use href="#search"></use>

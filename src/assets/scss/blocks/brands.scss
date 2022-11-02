@@ -1,12 +1,24 @@
 .brands {
   background: url(../images/brands-section/brands-bg.jpg) no-repeat;
   background-size: cover;
+
+  @include breakpoint($sm-bp) {
+    background: none;
+  }
 }
 
 .brands__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.4rem;
+
+  @include breakpoint($lg-bp) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint($sm-bp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .brands-item {
@@ -17,6 +29,10 @@
   background: rgba(255, 255, 255, 0.7);
 
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+
+  @include breakpoint($sm-bp) {
+    min-height: unset;
+  }
 }
 .brands-item__img {
   width: 100%;

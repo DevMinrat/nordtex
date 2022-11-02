@@ -1,8 +1,11 @@
 //= ../../../node_modules/@splidejs/splide/dist/js/splide.js
+//= ../../../node_modules/swiper/swiper-bundle.js
+
 //= components/scroll-lock.js
 
 document.addEventListener("DOMContentLoaded", () => {
   //= components/sliders.js
+  //= components/history.js
 
   const header = document.querySelector(".header");
   let scrollPrev = 0;
@@ -203,6 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let modal = document.querySelector(`[data-modalName='${modalName}']`);
 
         modal.classList.remove("hide");
+        scrollLock.disablePageScroll();
       });
     });
   }
@@ -213,6 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modals.forEach((el) => {
       el.querySelector("[data-close]").addEventListener("click", () => {
         el.classList.add("hide");
+        scrollLock.enablePageScroll();
       });
     });
   }
