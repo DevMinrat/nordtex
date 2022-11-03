@@ -5,12 +5,16 @@ title: Главная страница
 
 <section class="intro intro-main">
     <div class="intro__wrapper">
-        <video src=""></video>
+        <img class="video-poster" src="assets/images/about/about-intro-bg.jpg" alt="">
         <div class="video__start-btn">
             <svg>
                 <use href="#play-icon"></use>
             </svg>
         </div>
+        <video class="intro__video" preload="auto" loop muted playsinline>
+            <source src="assets/images/intro-video.mov" type="video/mp4" />
+            <source src="assets/images/intro-video.webm" type="video/webm" />
+        </video>
     </div>
 </section>
 

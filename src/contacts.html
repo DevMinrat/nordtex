@@ -56,24 +56,24 @@ title: Контакты
                 <div class="contacts-form__fields">
                     <div class="contacts-form__fields-column">
                         <div class="required-input__wrapper">
-                            <input class="required-input" type="text" id="cf-name" name="cf-name" data-name="ФИО"
+                            <input class="required-input" type="text" id="cf-name_cts" name="cf-name_cts" data-name="ФИО"
                                 required="required" />
-                            <label for="cf-name">ФИО</label>
+                            <label for="cf-name_cts">ФИО</label>
                         </div>
                         <div class="contacts-form__fields-row">
                             <div class="required-input__wrapper">
-                                <input class="required-input" type="tel" id="cf-tel" name="cf-tel" data-name="Телефон"
+                                <input class="required-input" type="tel" id="cf-tel_cts" name="cf-tel_cts" data-name="Телефон"
                                     required="required" />
-                                <label for="cf-tel">+7 (999)-000-00-00</label>
+                                <label for="cf-tel_cts">+7 (999)-000-00-00</label>
                             </div>
-                            <input type="email" id="cf-email" name="cf-email" placeholder="E-mail" />
+                            <input type="email" id="cf-email_cts" name="cf-email_cts" placeholder="E-mail" />
                         </div>
                     </div>
                     <div class="contacts-form__fields-column">
                         <textarea class="cf-textarea" placeholder="Поле для ввода дополнительной информации"></textarea>
                     </div>
                 </div>
-                <p class="error-req-fields hide">Не заполнены следующие обязательные поля: <span id="req-fields"></span>
+                <p class="error-req-fields hide">Не заполнены следующие обязательные поля: <span id="req-fields_cts"></span>
                 </p>
                 <div class="contacts-form__footer">
                     <button class="contacts-form__submit-btn filled-btn" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
@@ -99,7 +99,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -117,7 +117,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -135,7 +135,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -153,7 +153,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -171,7 +171,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -189,7 +189,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -207,7 +207,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -225,7 +225,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -243,7 +243,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -261,7 +261,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -279,7 +279,7 @@ title: Контакты
                                 </span>
                                 <span>8 (495) 775-97-75</span>
                             </a>
-                            <div class="contacts-addrs__info-address" href="tel:123">
+                            <div class="contacts-addrs__info-address">
                                 <svg>
                                     <use href="#point"></use>
                                 </svg>
@@ -305,41 +305,39 @@ title: Контакты
                 </div>
                 <div class="contacts-addrs__maps">
                     <div class="contacts-addrs__tabs-map  tabs-pane_addl tabs-pane_addl_show"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                     <div class="contacts-addrs__tabs-map tabs-pane_addl"><iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"
-                            frameborder="0"></iframe></div>
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A959ae8bf622f4a688d01d6398a16e9c2f881e3abb3aaf7815b29e8a8590fc98c&amp;source=constructor"></iframe>
+                    </div>
                 </div>
-
-
             </div>
         </div>
     </div>

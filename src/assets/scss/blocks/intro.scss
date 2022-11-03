@@ -47,13 +47,36 @@
     background-size: 100% 21rem;
     background-position: center 9rem;
   }
+
+  &.play {
+    .video-poster {
+      display: none;
+    }
+  }
+}
+
+.intro__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-poster {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video__start-btn {
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: 1;
+  z-index: 2;
 
   transform: translate(-50%, -50%);
   transition: all 0.1s linear;

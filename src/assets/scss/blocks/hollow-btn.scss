@@ -69,7 +69,7 @@
     right: -2px;
     background: inherit;
 
-    transform: rotate(45deg);
+    transform: rotate(46deg) translateY(30%);
   }
   & span::before {
     content: "";
@@ -80,7 +80,7 @@
     right: -2px;
     background: inherit;
 
-    transform: rotate(-45deg);
+    transform: rotate(-46deg) translateY(-30%);
   }
   &:hover {
     span {

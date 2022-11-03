@@ -52,11 +52,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerLogo = document.querySelector(".header__logo");
     const headerSearchBtn = document.querySelector(".header-search__icon");
     const headerOther = document.querySelector(".header-orher");
+    const headerSearch = document.querySelector(".header-search");
 
-    headerSearchBtn.addEventListener("click", () => {
+    headerSearchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      if (headerOther.classList.contains("active")) {
+        headerSearch.submit();
+      }
+
       headerOther.classList.add("active");
       menu.classList.add("hide");
       headerLogo.classList.add("mob-search");
+    });
+
+    document.documentElement.addEventListener("click", (e) => {
+      let t = e.target;
+
+      if (!headerSearch.contains(t)) {
+        headerOther.classList.remove("active");
+        menu.classList.remove("hide");
+        headerLogo.classList.remove("mob-search");
+      }
     });
   }
 
@@ -82,16 +99,18 @@ document.addEventListener("DOMContentLoaded", () => {
     forms.forEach((form) => {
       const submitBtn = form.querySelector("button[type='submit']");
 
-      submitBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+      if (submitBtn) {
+        submitBtn.addEventListener("click", (e) => {
+          e.preventDefault();
 
-        setBlankFields(form);
+          setBlankFields(form);
 
-        if (checkReqFields(form)) {
-          form.submit();
-          form.querySelector(".error-req-fields").classList.add("hide");
-        }
-      });
+          if (checkReqFields(form)) {
+            form.submit();
+            form.querySelector(".error-req-fields").classList.add("hide");
+          }
+        });
+      }
     });
 
     function checkReqFields(form) {
@@ -218,6 +237,33 @@ document.addEventListener("DOMContentLoaded", () => {
       el.querySelector("[data-close]").addEventListener("click", () => {
         el.classList.add("hide");
         scrollLock.enablePageScroll();
+      });
+    });
+  }
+
+  const pageLinks = document.querySelectorAll('a[href^="#"]');
+
+  if (pageLinks.length > 0) {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  }
+
+  const videoStartBtn = document.querySelectorAll(".video__start-btn");
+
+  if (videoStartBtn.length > 0) {
+    videoStartBtn.forEach((el) => {
+      let video = el.nextElementSibling;
+
+      el.addEventListener("click", () => {
+        video.play();
+        el.style.display = "none";
+        video.parentElement.classList.add("play");
       });
     });
   }

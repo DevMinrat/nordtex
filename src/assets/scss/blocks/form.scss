@@ -1,21 +1,23 @@
-input,
-textarea {
-  width: 100%;
+*:not(.bx_popup_form) {
+  input,
+  textarea {
+    width: 100%;
 
-  padding: 1.4rem 2.1rem;
+    padding: 1.4rem 2.1rem;
 
-  border: 0.1rem solid #adb1b6;
-  outline: none;
-  background: white;
+    border: 0.1rem solid #adb1b6;
+    outline: none;
+    background: white;
 
-  &::placeholder {
-    font-family: "Circe";
-    color: #adb1b6;
+    &::placeholder {
+      font-family: "Circe";
+      color: #adb1b6;
+    }
   }
-}
 
-input {
-  height: 5rem;
+  input {
+    height: 5rem;
+  }
 }
 
 .required-input__wrapper {

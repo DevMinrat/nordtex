@@ -37,8 +37,13 @@
     .header__tel-descr {
       color: $black;
     }
-    .header-search__icon svg {
-      fill: $black;
+    .header-search__icon {
+      background: none;
+      border: none;
+
+      svg {
+        fill: $black;
+      }
     }
 
     .burger,
@@ -277,7 +282,7 @@
 .header-search__input {
   position: relative;
   z-index: 333;
-  
+
   display: none;
 
   width: 100%;
@@ -293,6 +298,11 @@
   cursor: pointer;
 
   transition: all 0.1s linear;
+
+  padding: 0;
+
+  background: none;
+  border: none;
 
   &:hover {
     opacity: 1;
