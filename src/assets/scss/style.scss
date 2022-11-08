@@ -5,11 +5,11 @@
 
 html {
   box-sizing: border-box;
-  font-size: calc(100vw / 1400 * 10);
+  font-size: 10px;
 
-  // @include breakpoint($xl-bp) {
-  //   font-size: calc(100vw / 1600 * 10);
-  // }
+  @include breakpoint(1400px) {
+    font-size: calc(100vw / 1400 * 10);
+  }
   @include breakpoint($xl-bp) {
     font-size: calc(100vw / 1200 * 10);
   }
@@ -42,6 +42,9 @@ body {
 }
 
 main {
+  @include breakpoint($sm-bp) {
+    padding-top: 9rem;
+  }
   &.padding {
     padding-top: 12rem;
 

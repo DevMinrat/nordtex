@@ -267,4 +267,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  const introVideo = document.querySelector(".intro__video");
+
+  if (introVideo) {
+    introVideo.addEventListener("playing", () => {
+      introVideo.previousElementSibling.style.display = "none";
+    });
+  }
 });

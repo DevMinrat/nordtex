@@ -15,6 +15,9 @@
   @include breakpoint($lg-bp) {
     height: 43.3rem;
   }
+  @include breakpoint($sm-bp) {
+    height: 21rem;
+  }
 }
 
 .intro-bg {
@@ -22,6 +25,7 @@
 
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @include breakpoint($sm-bp) {
     background-size: auto 21rem;

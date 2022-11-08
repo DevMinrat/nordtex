@@ -1,6 +1,7 @@
 .brands {
   background: url(../images/brands-section/brands-bg.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
 
   @include breakpoint($sm-bp) {
     background: none;

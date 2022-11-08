@@ -5,7 +5,7 @@ if (document.querySelector(".main-news__slider")) {
     autoWidth: true,
     perMove: 1,
     gap: "4rem",
-    padding: { left: "11rem", right: "10rem" },
+    // padding: { left: "11rem", right: "10rem" },
     pagination: false,
     classes: {
       arrows: "splide__arrows your-class-arrows",
@@ -20,15 +20,11 @@ if (document.querySelector(".main-news__slider")) {
 
     breakpoints: {
       1024: {
-        padding: { left: "3rem", right: "3rem" },
         gap: "3rem",
       },
       920: {
         gap: "2rem",
         arrows: false,
-      },
-      500: {
-        padding: { left: "1.5rem", right: "1.5rem" },
       },
     },
   }).mount();
@@ -122,7 +118,6 @@ if (document.querySelector(".factory-info__main-slider")) {
     rewind: true,
     pagination: false,
     isNavigation: true,
-    padding: { left: "31.2rem", right: "3rem" },
 
     classes: {
       arrows: "splide__arrows",
@@ -133,11 +128,9 @@ if (document.querySelector(".factory-info__main-slider")) {
 
     breakpoints: {
       1024: {
-        padding: { left: "22rem", right: "3rem" },
         destroy: false,
       },
       920: {
-        padding: { left: "13.4rem", right: "3rem" },
         destroy: false,
       },
       500: {

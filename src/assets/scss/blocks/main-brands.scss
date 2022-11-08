@@ -5,6 +5,7 @@
 
   background: url(../images/brands/main-brands-bg.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
 
   @include breakpoint($lg-bp) {
     padding: 7rem 0;

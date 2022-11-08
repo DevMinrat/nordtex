@@ -1,4 +1,8 @@
 .news {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+
   padding: 19rem 0 10rem 12rem;
 
   @include breakpoint($xl-bp) {

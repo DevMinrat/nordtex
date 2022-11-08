@@ -6,12 +6,7 @@ title: Главная страница
 <section class="intro intro-main">
     <div class="intro__wrapper">
         <img class="video-poster" src="assets/images/about/about-intro-bg.jpg" alt="">
-        <div class="video__start-btn">
-            <svg>
-                <use href="#play-icon"></use>
-            </svg>
-        </div>
-        <video class="intro__video" preload="auto" loop muted playsinline>
+        <video class="intro__video"  loop muted playsinline autoplay poster="assets/images/about/about-intro-bg.jpg">
             <source src="assets/images/intro-video.mov" type="video/mp4" />
             <source src="assets/images/intro-video.webm" type="video/webm" />
         </video>
@@ -19,12 +14,12 @@ title: Главная страница
 </section>
 
 <section class="main-news section">
-    <div class="main-news__bg-word">новости</div>
     <div class="container">
         <h2 class="section-title">
             <span class="section-title__text">Наши новости</span>
         </h2>
         <div class="main-news__inner">
+            <div class="main-news__bg-word">новости</div>
             <div class="main-news__item mn-item">
                 <img class="mn-item__img" src="assets/images/news/news-main-item-img.png" alt="">
                 <div class="mn-item__content">
@@ -46,90 +41,89 @@ title: Главная страница
                     </a>
                 </div>
             </div>
-
-        </div>
-    </div>
-    <div class="main-news__slider splide">
-        <div class="splide__track">
-            <div class="splide__list">
-                <div class="news-item mn-si splide__slide">
-                    <p class="news-item__date">Авг 01, 2022
-                    </p>
-                    <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
-                        области
-                    </p>
-                    <a href="#" class="news-item__link hollow-btn">Подробнее
-                        <div class="arrow-icon">
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="news-item mn-si splide__slide">
-                    <p class="news-item__date">Авг 01, 2022
-                    </p>
-                    <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
-                        области
-                    </p>
-                    <a href="#" class="news-item__link hollow-btn">Подробнее
-                        <div class="arrow-icon">
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="news-item mn-si splide__slide">
-                    <p class="news-item__date">Авг 01, 2022
-                    </p>
-                    <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
-                        области
-                    </p>
-                    <a href="#" class="news-item__link hollow-btn">Подробнее
-                        <div class="arrow-icon">
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="news-item mn-si splide__slide">
-                    <p class="news-item__date">Авг 01, 2022
-                    </p>
-                    <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
-                        области
-                    </p>
-                    <a href="#" class="news-item__link hollow-btn">Подробнее
-                        <div class="arrow-icon">
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="news-item mn-si splide__slide">
-                    <p class="news-item__date">Авг 01, 2022
-                    </p>
-                    <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
-                        области
-                    </p>
-                    <a href="#" class="news-item__link hollow-btn">Подробнее
-                        <div class="arrow-icon">
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="splide__arrows splide__arrows--ltr">
-            <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
-                aria-controls="splide01-track">
-                <svg>
-                    <use href="#arrow-md"></use>
-                </svg>
-            </button>
-            <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
-                aria-controls="splide01-track">
-                <svg>
-                    <use href="#arrow-md"></use>
-                </svg>
-            </button>
         </div>
     </div>
     <div class="container">
+        <div class="main-news__slider splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="news-item mn-si splide__slide">
+                        <p class="news-item__date">Авг 01, 2022
+                        </p>
+                        <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
+                            области
+                        </p>
+                        <a href="#" class="news-item__link hollow-btn">Подробнее
+                            <div class="arrow-icon">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item mn-si splide__slide">
+                        <p class="news-item__date">Авг 01, 2022
+                        </p>
+                        <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
+                            области
+                        </p>
+                        <a href="#" class="news-item__link hollow-btn">Подробнее
+                            <div class="arrow-icon">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item mn-si splide__slide">
+                        <p class="news-item__date">Авг 01, 2022
+                        </p>
+                        <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
+                            области
+                        </p>
+                        <a href="#" class="news-item__link hollow-btn">Подробнее
+                            <div class="arrow-icon">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item mn-si splide__slide">
+                        <p class="news-item__date">Авг 01, 2022
+                        </p>
+                        <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
+                            области
+                        </p>
+                        <a href="#" class="news-item__link hollow-btn">Подробнее
+                            <div class="arrow-icon">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-item mn-si splide__slide">
+                        <p class="news-item__date">Авг 01, 2022
+                        </p>
+                        <p class="news-item__title">Сотрудники "Нордтекс" получили награды от Губернатора Ивановской
+                            области
+                        </p>
+                        <a href="#" class="news-item__link hollow-btn">Подробнее
+                            <div class="arrow-icon">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="splide__arrows splide__arrows--ltr">
+                <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+                    aria-controls="splide01-track">
+                    <svg>
+                        <use href="#arrow-md"></use>
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                    aria-controls="splide01-track">
+                    <svg>
+                        <use href="#arrow-md"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
         <a class="main-news__slider-link filled-btn" href="#">
             Смотреть все
             <div class="arrow-icon">
@@ -181,9 +175,9 @@ title: Главная страница
 </section>
 
 <section class="main-recruiting section">
-    <div class="main-recruiting__bg-word">Работа</div>
     <div class="container">
         <div class="main-recruiting__inner">
+            <div class="main-recruiting__bg-word">Работа</div>
             <h2 class="section-title section-title--mob">
                 <span class="section-title__text">Рекрутинг</span>
             </h2>

@@ -1,7 +1,7 @@
 *:not(.bx_popup_form) {
   input,
   textarea {
-    width: 100%;
+    width: -webkit-fill-available;
 
     padding: 1.4rem 2.1rem;
 

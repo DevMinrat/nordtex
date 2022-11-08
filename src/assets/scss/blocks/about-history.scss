@@ -2,6 +2,7 @@
   min-height: var(--windH);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   padding: 9rem 0;
@@ -397,6 +398,7 @@
 .about-history__page {
   background: url(../images/about-history/about-history-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
 
   .about-nordtex__title {
     max-width: 96rem;

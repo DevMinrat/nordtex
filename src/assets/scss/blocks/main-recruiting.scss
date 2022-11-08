@@ -3,6 +3,7 @@
 
   background: url(../images/rectuiting/recruiting-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
 
   .section-title {
     @include breakpoint($sm-bp) {
@@ -20,6 +21,8 @@
 }
 
 .main-recruiting__inner {
+  position: relative;
+
   display: flex;
   align-items: center;
 
@@ -95,8 +98,8 @@
 
 .main-recruiting__bg-word {
   position: absolute;
-  right: -16rem;
-  top: 11rem;
+  right: -27rem;
+  top: 1rem;
 
   font-weight: 800;
   font-size: 24.5rem;
@@ -108,8 +111,8 @@
   user-select: none;
 
   @include breakpoint($lg-bp) {
-    top: 4.9rem;
-    right: 3rem;
+    top: -1.5rem;
+    right: 0;
 
     font-size: 12rem;
   }

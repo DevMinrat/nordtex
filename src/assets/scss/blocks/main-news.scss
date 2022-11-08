@@ -3,6 +3,7 @@
 
   background: url(../images/news/news-main-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
 
   .section-title {
     margin-bottom: 7.2rem;
@@ -14,8 +15,8 @@
 
   .main-news__bg-word {
     position: absolute;
-    left: 3rem;
-    top: 15rem;
+    left: -7rem;
+    top: -5.5rem;
 
     font-weight: 800;
     font-size: 24.5rem;
@@ -27,8 +28,8 @@
     user-select: none;
 
     @include breakpoint($lg-bp) {
-      top: 12.5rem;
-      left: 0;
+      top: -3rem;
+      left: -3rem;
 
       font-size: 12rem;
     }
@@ -36,6 +37,10 @@
       display: none;
     }
   }
+}
+
+.main-news__inner {
+  position: relative;
 }
 
 .mn-item {

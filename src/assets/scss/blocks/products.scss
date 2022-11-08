@@ -1,4 +1,8 @@
 .products {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+
   &.section {
     @include breakpoint($sm-bp) {
       padding-bottom: 0;
@@ -11,6 +15,7 @@
 
   background: url(../images/products/product-benefits-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
 
   @include breakpoint($sm-bp) {
     background: none;
