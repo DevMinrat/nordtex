@@ -118,6 +118,7 @@ if (document.querySelector(".factory-info__main-slider")) {
     rewind: true,
     pagination: false,
     isNavigation: true,
+    padding: { left: "31.2rem", right: "3rem" },
 
     classes: {
       arrows: "splide__arrows",
@@ -129,9 +130,11 @@ if (document.querySelector(".factory-info__main-slider")) {
     breakpoints: {
       1024: {
         destroy: false,
+        padding: { left: "22rem", right: "3rem" },
       },
       920: {
         destroy: false,
+        padding: { left: "13.4rem", right: "3rem" },
       },
       500: {
         destroy: true,

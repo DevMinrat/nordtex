@@ -133,6 +133,11 @@
 
       height: 100%;
     }
+
+    & input,
+    & textarea {
+      width: 100%;
+    }
   }
   .modal-resume__fields-column {
     display: flex;

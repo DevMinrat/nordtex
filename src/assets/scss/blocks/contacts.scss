@@ -204,11 +204,27 @@
   }
 }
 
-.contacts-form__submit-btn {
-  @include breakpoint($lg-bp) {
-    width: 100%;
-    max-width: 23rem;
+input.contacts-form__submit-btn {
+  max-width: 23rem;
+
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+
+  padding: 1.2rem 3rem;
+
+  background-color: $primary;
+  border: 1px solid $primary;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: white;
+
+    background-color: $accent;
+    border-color: $accent;
   }
+
   @include breakpoint($sm-bp) {
     max-width: 100%;
     justify-content: center;
