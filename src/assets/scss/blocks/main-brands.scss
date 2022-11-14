@@ -62,8 +62,21 @@
     margin-bottom: 4rem;
   }
 
+  a {
+    &:hover {
+      background: white;
+      img {
+        filter: brightness(1) invert(0);
+      }
+    }
+  }
+
   img {
     width: 100%;
+
+    filter: brightness(0) invert(1);
+
+    transition: inherit;
 
     @include breakpoint($lg-bp) {
       height: 11.9rem;

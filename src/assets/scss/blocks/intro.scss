@@ -25,11 +25,10 @@
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 
   @include breakpoint($sm-bp) {
     background-size: auto 21rem;
-    background-position: center 9rem;
+    background-position: center 0;
   }
 
   &::after {

@@ -35,15 +35,12 @@
 
   @include breakpoint($lg-bp) {
     max-width: 16.3rem;
-    margin-left: auto;
 
     padding: 1.2rem 2rem;
   }
 
   @include breakpoint($sm-bp) {
     max-width: 16rem;
-
-    margin-top: 3rem;
   }
 }
 
@@ -81,6 +78,7 @@
 .search-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @include breakpoint($lg-bp) {
     flex-wrap: wrap;

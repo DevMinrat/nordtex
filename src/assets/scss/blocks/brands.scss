@@ -34,11 +34,19 @@
   @include breakpoint($sm-bp) {
     min-height: unset;
   }
+
+  &:hover {
+    .brands-item__img {
+      transform: scale(1.05);
+    }
+  }
 }
 .brands-item__img {
   width: 100%;
 
   margin-bottom: 2.5rem;
+
+  transition: all 0.2s linear;
 }
 .brands-item__link {
   width: 100%;

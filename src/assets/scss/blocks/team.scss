@@ -4,7 +4,7 @@
   background-position: center;
 
   .about-nordtex__title {
-    margin: 0 auto 5rem;
+    margin: 5rem auto 10rem;
   }
 }
 
@@ -35,6 +35,8 @@
 .team-descr__info {
   width: 100%;
   max-width: 39rem;
+
+  line-height: 1.4;
 }
 
 .team-management {
@@ -97,4 +99,6 @@
   margin: 0 auto;
 
   padding: 1.2rem 2.5rem;
+
+  cursor: pointer;
 }

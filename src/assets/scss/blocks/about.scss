@@ -89,8 +89,11 @@
   position: relative;
 
   width: 100%;
-  max-width: 46rem;
-  height: 33.8rem;
+  // max-width: 46rem;
+  // height: 33.8rem;
+
+  max-width: 50rem;
+  height: 32rem;
 
   @include breakpoint($sm-bp) {
     margin-bottom: 4rem;
