@@ -1,5 +1,6 @@
 .intro {
-  height: 49rem;
+  font-size: calc(100vw / 1400 * 10);
+  height: 49em;
 
   @include breakpoint($lg-bp) {
     height: 43.3rem;
