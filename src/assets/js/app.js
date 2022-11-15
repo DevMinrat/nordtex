@@ -54,27 +54,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerOther = document.querySelector(".header-orher");
     const headerSearch = document.querySelector(".header-search");
 
-    headerSearchBtn.addEventListener("click", (e) => {
-      e.preventDefault();
+    if (headerSearchBtn) {
+      headerSearchBtn.addEventListener("click", (e) => {
+        e.preventDefault();
 
-      if (headerOther.classList.contains("active")) {
-        headerSearch.submit();
-      }
+        if (headerOther.classList.contains("active")) {
+          headerSearch.submit();
+        }
 
-      headerOther.classList.add("active");
-      menu.classList.add("hide");
-      headerLogo.classList.add("mob-search");
-    });
+        headerOther.classList.add("active");
+        menu.classList.add("hide");
+        headerLogo.classList.add("mob-search");
+      });
+    }
 
-    document.documentElement.addEventListener("click", (e) => {
-      let t = e.target;
+    // document.documentElement.addEventListener("click", (e) => {
+    //   let t = e.target;
 
-      if (!headerSearch.contains(t)) {
-        headerOther.classList.remove("active");
-        menu.classList.remove("hide");
-        headerLogo.classList.remove("mob-search");
-      }
-    });
+    //   if (!headerSearch.contains(t)) {
+    //     headerOther.classList.remove("active");
+    //     menu.classList.remove("hide");
+    //     headerLogo.classList.remove("mob-search");
+    //   }
+    // });
   }
 
   const brandsSection = document.querySelector(".brands");
