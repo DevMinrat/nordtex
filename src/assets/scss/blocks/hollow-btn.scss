@@ -10,7 +10,6 @@
   text-transform: uppercase;
 
   padding: 1.2rem 3rem;
-  margin-right: 1rem;
 
   background-color: transparent;
   border: 1px solid $primary;
@@ -27,6 +26,8 @@
 
     .arrow-icon {
       width: 3.4rem;
+
+      margin-right: 0;
 
       span {
         width: 3.4rem;
@@ -47,6 +48,7 @@
   height: 2.4rem;
 
   margin-left: 1.2rem;
+  margin-right: 1rem;
   margin-bottom: 0.3rem;
 
   transition: inherit;
