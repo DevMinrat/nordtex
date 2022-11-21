@@ -277,4 +277,21 @@ document.addEventListener("DOMContentLoaded", () => {
       introVideo.previousElementSibling.style.display = "none";
     });
   }
+
+  // align buttons
+
+  const btnArrows = document.querySelectorAll(".arrow-icon");
+
+  if (btnArrows.length) {
+    btnArrows.forEach((el) => {
+      let parent = el.parentElement;
+
+      if (
+        parent.classList.contains("filled-btn") ||
+        parent.classList.contains("hollow-btn")
+      ) {
+        parent.classList.add("padding-fix");
+      }
+    });
+  }
 });

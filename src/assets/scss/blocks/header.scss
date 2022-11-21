@@ -9,7 +9,7 @@
   transition: all 0.2s linear;
   transform: translateY(0);
 
-  background: rgba(15, 54, 43, 0.5);
+  background: rgba(15, 54, 43, 0.8);
 
   @include breakpoint($sm-bp) {
     background: white;

@@ -36,7 +36,7 @@ if (swiperHistory) {
     },
     mousewheel: {
       sensitivity: 1,
-      eventsTarget: ".swiper-slide",
+      eventsTarget: ".about__slide_col-img",
     //   releaseOnEdges: true,
     },
   });

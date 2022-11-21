@@ -54,10 +54,11 @@
 }
 
 .pci-news__date {
+  text-transform: uppercase;
   color: white;
   opacity: 0.8;
 
-  @include breakpoint($lg-bp) {
+  @include breakpoint($sm-bp) {
     color: $black;
   }
 }
@@ -69,6 +70,9 @@
 
   @include breakpoint($lg-bp) {
     font-size: 2rem;
+  }
+
+  @include breakpoint($sm-bp) {
     color: $black;
   }
 }

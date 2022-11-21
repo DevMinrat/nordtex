@@ -16,6 +16,12 @@
   }
 }
 
+.intro-career {
+  @include breakpoint($lg-bp) {
+    background-position: center;
+  }
+}
+
 .intro-main {
   height: 62rem;
 
