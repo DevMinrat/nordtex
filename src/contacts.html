@@ -56,14 +56,14 @@ title: Контакты
                 <div class="contacts-form__fields">
                     <div class="contacts-form__fields-column">
                         <div class="required-input__wrapper">
-                            <input class="required-input" type="text" id="cf-name_cts" name="cf-name_cts" data-name="ФИО"
-                                required="required" />
+                            <input class="required-input" type="text" id="cf-name_cts" name="cf-name_cts"
+                                data-name="ФИО" required="required" />
                             <label for="cf-name_cts">ФИО</label>
                         </div>
                         <div class="contacts-form__fields-row">
                             <div class="required-input__wrapper">
-                                <input class="required-input" type="tel" id="cf-tel_cts" name="cf-tel_cts" data-name="Телефон"
-                                    required="required" />
+                                <input class="required-input" type="tel" id="cf-tel_cts" name="cf-tel_cts"
+                                    data-name="Телефон" required="required" />
                                 <label for="cf-tel_cts">+7 (999)-000-00-00</label>
                             </div>
                             <input type="email" id="cf-email_cts" name="cf-email_cts" placeholder="E-mail" />
@@ -73,15 +73,20 @@ title: Контакты
                         <textarea class="cf-textarea" placeholder="Поле для ввода дополнительной информации"></textarea>
                     </div>
                 </div>
-                <p class="error-req-fields hide">Не заполнены следующие обязательные поля: <span id="req-fields_cts"></span>
+                <p class="error-req-fields hide">Не заполнены следующие обязательные поля: <span
+                        id="req-fields_cts"></span>
                 </p>
                 <div class="contacts-form__footer">
                     <button class="contacts-form__submit-btn filled-btn" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
                     <div class="contacts-form__info">
                         <p><span style="color: #ff0000;">*</span> Обязательные поля для ввода</p>
-                        <p class="contacts-form__info-privacy">Отправляя данные, вы даете <span
-                                class="modal-privacy__link" data-modal="modal-privacy">согласие на обработку и хранение
-                                персональных данных</span>.
+                        <p class="contacts-form__info-privacy">
+                            <input class="custom-checkbox" type="checkbox" value="contact-privacy"
+                                name="contact-privacy" id="contact-privacy" required>
+                            <label for=contact-privacy></label>
+                            <span>Я даю <span class="modal-privacy__link"
+                                    data-modal="modal-privacy"> согласие на обработку и хранение
+                                    персональных данных</span>.</span>
                         </p>
                     </div>
                 </div>

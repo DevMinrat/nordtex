@@ -300,6 +300,8 @@
     display: none;
 
     width: 100%;
+    max-width: 34.5rem;
+    margin: 0 auto;
     justify-content: center;
 
     @include breakpoint($sm-bp) {

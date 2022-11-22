@@ -361,3 +361,12 @@ input.contacts-form__submit-btn {
     fill: $secondary;
   }
 }
+
+.contacts-form__info-privacy {
+  display: flex;
+  align-items: center;
+
+  span {
+    line-height: 1;
+  }
+}
