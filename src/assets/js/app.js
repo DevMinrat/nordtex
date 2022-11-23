@@ -94,65 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /// required form fields
-  const forms = document.querySelectorAll("form");
-
-  if (forms.length > 0) {
-    forms.forEach((form) => {
-      const submitBtn = form.querySelector("button[type='submit']");
-
-      if (submitBtn) {
-        submitBtn.addEventListener("click", (e) => {
-          e.preventDefault();
-
-          setBlankFields(form);
-
-          if (checkReqFields(form)) {
-            form.submit();
-            form.querySelector(".error-req-fields").classList.add("hide");
-          }
-        });
-      }
-    });
-
-    function checkReqFields(form) {
-      const reqInputBoxes = form.querySelectorAll(".required-input__wrapper");
-      let flag = false;
-
-      reqInputBoxes.forEach((el) => {
-        const input = el.querySelector("input");
-
-        if (!input.validity.valid) {
-          el.classList.add("error");
-          flag = false;
-        } else {
-          el.classList.remove("error");
-          flag = true;
-        }
-      });
-
-      return flag;
-    }
-
-    function setBlankFields(form) {
-      const errReqField = form.querySelector(".error-req-fields");
-      const reqFieldsArea = errReqField.querySelector("#req-fields");
-      const reqInputs = form.querySelectorAll("input[required]");
-
-      let blankFieldsList = [];
-
-      reqInputs.forEach((input) => {
-        if (!input.validity.valid) {
-          blankFieldsList.push(input.dataset.name);
-
-          errReqField.classList.remove("hide");
-
-          reqFieldsArea.innerText = blankFieldsList.join(", ");
-        }
-      });
-    }
-  }
-
   // tabs
 
   class ItcTabs {
@@ -293,5 +234,104 @@ document.addEventListener("DOMContentLoaded", () => {
         parent.classList.add("padding-fix");
       }
     });
+  }
+
+  /// required form fields
+  const formResume = document.querySelector("#sendform");
+
+  if (formResume) {
+    // resumeBtn.addEventListener("click", (e) => {
+    //   setBlankFields(formResume);
+
+    //   // if (checkReqFields(formResume)) {
+    //   // }
+    // });
+
+    // formResume.addEventListener("submit", function (e) {
+    //   var form = document.forms.sendform,
+    //                formData = new FormData(form),
+    //                xhr = new XMLHttpRequest();
+
+    //   xhr.open("POST", "/mail.php");
+
+    //   xhr.onreadystatechange = function () {
+    //     if (xhr.readyState == 4) {
+    //       if (xhr.status == 200) {
+    //         $("#sendform").html('<p class="thank">Данные отправлены!<p>');
+    //       }
+    //     }
+    //   };
+    //   xhr.send(formData);
+    // });
+    // formResume.addEventListener("submit", handleFormSubmit);
+
+    // function handleFormSubmit(e) {
+    //   e.preventDefault();
+
+    //   let formData = new FormData(this);
+
+    //   formData = Object.fromEntries(formData);
+
+    //   ajaxSend(formData);
+    //   formResume.querySelector(".error-req-fields").classList.add("hide");
+
+    //   this.reset();
+    // }
+
+    function checkReqFields(form) {
+      const reqInputBoxes = form.querySelectorAll(".required-input__wrapper");
+      let flag = false;
+
+      reqInputBoxes.forEach((el) => {
+        const input = el.querySelector("input");
+
+        if (input.value.length == 0) {
+          el.classList.add("error");
+          flag = false;
+        } else {
+          el.classList.remove("error");
+          flag = true;
+        }
+      });
+
+      return flag;
+    }
+
+    function setBlankFields(form) {
+      const errReqField = form.querySelector(".error-req-fields");
+      const reqFieldsArea = errReqField.querySelector("#req-fields");
+      const reqInputs = form.querySelectorAll("input[required]");
+
+      let blankFieldsList = [];
+
+      reqInputs.forEach((input) => {
+        if (input.value.length == 0) {
+          blankFieldsList.push(input.dataset.name);
+
+          errReqField.classList.remove("hide");
+
+          reqFieldsArea.innerText = blankFieldsList.join(", ");
+        }
+      });
+
+      if (blankFieldsList.length == 0) {
+        errReqField.classList.add("hide");
+      }
+    }
+
+    // const ajaxSend = (formData) => {
+    //   fetch("mail.php", {
+    //     // файл-обработчик
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(formData),
+    //   })
+    //     .then((response) => {
+    //       $("#sendform").html('<p class="thank">Данные отправлены!<p>');
+    //     })
+    //     .catch((error) => console.error(error));
+    // };
   }
 });

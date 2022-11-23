@@ -70,8 +70,6 @@
 
 .error-req-fields {
   color: #ff0000;
-
-  margin-bottom: 3rem;
 }
 
 select {
@@ -155,6 +153,10 @@ select {
     background-size: 50% 50%;
 
     transition: all 0.1s linear;
+  }
+
+  &.error + label::before {
+    border: 0.1rem solid #ff0000;
   }
 
   &:not(:disabled):not(:checked) + label:hover::before {

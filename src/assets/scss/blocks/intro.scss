@@ -23,13 +23,17 @@
 }
 
 .intro-main {
-  height: 62rem;
+  height: 68rem;
+
+  margin-top: 9rem;
 
   @include breakpoint($lg-bp) {
     height: 43.3rem;
   }
   @include breakpoint($sm-bp) {
     height: 21rem;
+
+    padding-top: 0;
   }
 }
 
