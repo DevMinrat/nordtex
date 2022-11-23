@@ -194,3 +194,24 @@
     margin-top: 2rem;
   }
 }
+
+.modal-thx {
+  .modal__inner {
+    max-width: 52.5rem;
+
+    padding-top: 6rem;
+
+    @include breakpoint($sm-bp) {
+      top: 0;
+      left: 0;
+      transform: none;
+
+      height: 100%;
+    }
+
+    .modal-heading {
+      text-align: center;
+      max-width: 100% !important;
+    }
+  }
+}

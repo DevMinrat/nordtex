@@ -46,6 +46,7 @@
 }
 
 .required-input[required] + label {
+  cursor: text;
   color: #adb1b6;
   font-family: "Circe";
   font-size: 1.6rem;
