@@ -2,7 +2,7 @@
   @include breakpoint($sm-bp) {
     padding-bottom: 14rem;
 
-    background-color: #f4f4f4;
+    background-color: white;
   }
 
   .intro__wrapper {
@@ -86,7 +86,7 @@
 }
 
 .prc {
-  background: #f4f4f4;
+  background: white;
 
   &.section {
     @include breakpoint($sm-bp) {
@@ -171,52 +171,29 @@
 }
 
 .marketing {
-  background: #f4f4f4;
+  background: url(../images/marketing/marketing-bg.png) no-repeat;
+  background-size: 140rem;
+  background-position: center bottom;
 
-  padding-bottom: 10rem;
+  padding: 10rem 0 8rem;
 
   @include breakpoint($lg-bp) {
-    padding-bottom: 7rem;
+    background-size: cover;
   }
 }
 
 .marketing-header {
-  position: relative;
-
   margin-bottom: 3rem;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-
-    width: 100%;
-    height: 0.4rem;
-
-    background: $secondary;
-  }
-
   p {
-    position: relative;
-    z-index: 2;
-
     width: 100%;
-    max-width: 64rem;
+    max-width: 40rem;
 
     font-weight: 700;
     font-size: 2rem;
-    color: $secondary;
+    color: #adb1b6;
 
-    padding: 0 4rem;
-    margin: 0 auto;
-
-    background: #f4f4f4;
-
-    @include breakpoint($sm-bp) {
-      padding: 0 1.5rem;
-    }
+    margin-bottom: 3.4rem;
   }
 }
 .marketing__inner {
@@ -224,22 +201,16 @@
   max-width: 64rem;
 
   font-size: 2rem;
-
-  padding: 0 4rem;
-  margin: 0 auto;
-
-  @include breakpoint($sm-bp) {
-    padding: 0 1.5rem;
-  }
 }
 .marketing-director {
-  padding-left: 3.2rem;
-
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .marketing-director__name {
-  font-weight: 700;
-  font-size: 3rem;
+  font-size: 1.8rem;
+}
+.marketing-director__pos {
+  font-size: max(12px, 1.4rem);
+  color: #adb1b6;
 }
 .marketing__soc {
   display: grid;
@@ -256,7 +227,9 @@
   }
 
   a {
-    color: $black;
+    font-weight: 700;
+    font-size: max(12px, 1.4rem);
+    color: #adb1b6;
 
     &:hover {
       color: $secondary;
