@@ -49,6 +49,12 @@
 
     &:hover {
       background: transparent;
+
+      color: $primary;
+
+      .arrow-icon span {
+        background: $primary;
+      }
     }
   }
 }

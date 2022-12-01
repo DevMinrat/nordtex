@@ -19,77 +19,11 @@
   &:hover {
     color: white;
 
-    margin-right: 0;
-
     background-color: $accent;
     border-color: $accent;
-
-    .arrow-icon {
-      width: 3.4rem;
-
-      margin-right: 0;
-
-      span {
-        width: 3.4rem;
-
-        background: #fff;
-      }
-    }
   }
 }
 
 .arrow-icon {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-
-  width: 2.4rem;
-  height: 2.4rem;
-
-  margin-left: 1.2rem;
-  margin-right: 1rem;
-  margin-bottom: 0.3rem;
-
-  transition: inherit;
-
-  & span {
-    display: block;
-
-    position: relative;
-
-    width: 1.2rem;
-    height: 2px;
-
-    background: $primary;
-
-    transition: width 0.1s linear;
-  }
-  & span::after {
-    content: "";
-    position: absolute;
-    width: 9px;
-    height: 2px;
-    top: -3px;
-    right: -2px;
-    background: inherit;
-
-    transform: rotate(46deg) translateY(30%);
-  }
-  & span::before {
-    content: "";
-    position: absolute;
-    width: 9px;
-    height: 2px;
-    top: 3px;
-    right: -2px;
-    background: inherit;
-
-    transform: rotate(-46deg) translateY(-30%);
-  }
-  &:hover {
-    span {
-      width: 3.4rem;
-    }
-  }
+  display: none;
 }
