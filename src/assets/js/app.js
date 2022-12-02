@@ -4,6 +4,12 @@
 //= components/scroll-lock.js
 
 document.addEventListener("DOMContentLoaded", () => {
+  const introVideo = document.querySelector(".intro__video");
+
+  if (introVideo) {
+    introVideo.play();
+  }
+
   //= components/sliders.js
   //= components/history.js
 
@@ -194,28 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
           behavior: "smooth",
         });
       });
-    });
-  }
-
-  const videoStartBtn = document.querySelectorAll(".video__start-btn");
-
-  if (videoStartBtn.length > 0) {
-    videoStartBtn.forEach((el) => {
-      let video = el.nextElementSibling;
-
-      el.addEventListener("click", () => {
-        video.play();
-        el.style.display = "none";
-        video.parentElement.classList.add("play");
-      });
-    });
-  }
-
-  const introVideo = document.querySelector(".intro__video");
-
-  if (introVideo) {
-    introVideo.addEventListener("playing", () => {
-      introVideo.previousElementSibling.style.display = "none";
     });
   }
 
