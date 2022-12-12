@@ -19,10 +19,16 @@
                             required="required" />
                         <label for="cf-tel">+7 (999)-000-00-00</label>
                     </div>
-                    <div class="required-input__wrapper">
-                        <input class="required-input" type="tel" id="cf-sity" name="cf-sity" data-name="Город"
-                            required="required" />
-                        <label for="cf-sity">Город</label>
+                    <div class="required-input__wrapper sity-wrapper">
+                        <select name="sity">
+                            <option value="" disabled selected>Город</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Балашиха">Балашиха</option>
+                            <option value="Иваново">Иваново</option>
+                            <option value="Родники">Родники</option>
+                            <option value="Вичуга">Вичуга</option>
+                            <option value="Другие города">Другие города</option>
+                        </select>
                     </div>
 
                 </div>
